@@ -1,0 +1,648 @@
+{
+  "items": [
+    {
+      "id": "20990",
+      "title": "Missão Impossível - Efeito Fallout",
+      "originalTitle": "Mission: Impossible - Fallout",
+      "ancineId": "",
+      "countryOrigin": "Estados Unidos",
+      "priority": 1,
+      "contentRating": "14 anos",
+      "duration": "148",
+      "rating": 0.0,
+      "synopsis": "Em ‘Missão Impossível: Efeito Fallout‘, Ethan Hunt e sua equipe do IMF, na companhia de aliados conhecidos, estão em uma corrida contra o tempo depois que uma missão dá errado.",
+      "cast": " Tom Cruise, Rebecca Ferguson, Henry Cavill",
+      "director": "Christopher McQuarrie",
+      "distributor": "Paramount",
+      "inPreSale": false,
+      "urlKey": "missao-impossivel-efeito-fallout",
+      "isPlaying": true,
+      "countIsPlaying": 353,
+      "premiereDate": {
+        "localDate": "2018-07-26T03:00:00+00:00",
+        "isToday": false,
+        "dayOfWeek": "quinta-feira",
+        "dayAndMonth": "26/07",
+        "hour": "03:00",
+        "year": "2018"
+      },
+      "creationDate": "0001-01-01T00:00:00Z",
+      "city": "São Paulo",
+      "siteURL": "https://www.ingresso.com/sao-paulo/home/filmes/missao-impossivel-efeito-fallout",
+      "images": [
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20990-cartaz.jpg",
+          "type": "PosterPortrait"
+        },
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20990-destaque.jpg",
+          "type": "PosterHorizontal"
+        }
+      ],
+      "genres": [
+        "Ação"
+      ],
+      "completeTags": [
+        {
+          "name": "Em Alta",
+          "background": "",
+          "color": ""
+        }
+      ],
+      "tags": [
+        "Em Alta"
+      ],
+      "trailers": [
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=mlu8mMBNaqM",
+          "embeddedUrl": "//www.youtube.com/embed/mlu8mMBNaqM"
+        },
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=b828g1d1UHU",
+          "embeddedUrl": "//www.youtube.com/embed/b828g1d1UHU"
+        }
+      ]
+    },
+    {
+      "id": "20973",
+      "title": "Hotel Transilvânia 3: Férias Monstruosas",
+      "originalTitle": "Hotell Transylvania 3: Summer Vacation",
+      "ancineId": "",
+      "countryOrigin": "USA",
+      "priority": 2,
+      "contentRating": "Livre",
+      "duration": "130",
+      "rating": 0.0,
+      "synopsis": "Com o neto de Dracula, Dennis agora totalmente um vampiro, as coisas não poderia ser melhor no hotel! Mas quando um bilionário ganancioso ameaça destruir o hotel e substituí-lo com o seu próprio resort ilha, Dennis e sua família, bem como o resto dos monstros, bolam um plano para se certificar de que ele nunca consiga.",
+      "cast": "",
+      "director": "Genndy Tartakovsky",
+      "distributor": "Sony Pictures",
+      "inPreSale": false,
+      "urlKey": "hotel-transilvania-3-ferias-monstruosas",
+      "isPlaying": true,
+      "countIsPlaying": 347,
+      "premiereDate": {
+        "localDate": "2018-07-12T03:00:00+00:00",
+        "isToday": false,
+        "dayOfWeek": "quinta-feira",
+        "dayAndMonth": "12/07",
+        "hour": "03:00",
+        "year": "2018"
+      },
+      "creationDate": "0001-01-01T00:00:00Z",
+      "city": "São Paulo",
+      "siteURL": "https://www.ingresso.com/sao-paulo/home/filmes/hotel-transilvania-3-ferias-monstruosas",
+      "images": [
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20973-cartaz.jpg",
+          "type": "PosterPortrait"
+        },
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20973-destaque.jpg",
+          "type": "PosterHorizontal"
+        }
+      ],
+      "genres": [
+        "Animação",
+        "Comédia",
+        "Infantil"
+      ],
+      "completeTags": [
+        {
+          "name": "Família",
+          "background": "",
+          "color": ""
+        },
+        {
+          "name": "Em Alta",
+          "background": "",
+          "color": ""
+        }
+      ],
+      "tags": [
+        "Família",
+        "Em Alta"
+      ],
+      "trailers": [
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=hPpXxHhTeJg",
+          "embeddedUrl": "//www.youtube.com/embed/hPpXxHhTeJg"
+        },
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=LWqHrUcCeG4",
+          "embeddedUrl": "//www.youtube.com/embed/LWqHrUcCeG4"
+        }
+      ]
+    },
+    {
+      "id": "20532",
+      "title": "Os Incríveis 2 ",
+      "originalTitle": "The Incredibles 2",
+      "ancineId": "E1800037700000",
+      "countryOrigin": "EUA",
+      "priority": 3,
+      "contentRating": "Livre",
+      "duration": "118",
+      "rating": 0.0,
+      "synopsis": "A família de heróis preferida está de volta em ‘Os Incríveis 2’. Dessa vez, Helena é quem assume os holofotes, deixando Roberto em casa com Violeta e Flecha para conduzir o heroico dia-a-dia de uma vida “normal”. É uma transição difícil para todos, que se complica ainda mais tendo em vista que a família ainda não sabe dos superpoderes do bebê Zezé. Quando um novo super vilão traça um plano perigoso e brilhante, a família e o Gelado precisarão encontrar um jeito de trabalhar juntos novamente – o que é mais fácil de dizer do que de colocar em prática, mesmo todos eles sendo realmente incríveis.\n\n",
+      "cast": "",
+      "director": "Brad Bird",
+      "distributor": "Disney",
+      "inPreSale": false,
+      "urlKey": "os-incriveis-2",
+      "isPlaying": true,
+      "countIsPlaying": 349,
+      "premiereDate": {
+        "localDate": "2018-06-28T03:00:00+00:00",
+        "isToday": false,
+        "dayOfWeek": "quinta-feira",
+        "dayAndMonth": "28/06",
+        "hour": "03:00",
+        "year": "2018"
+      },
+      "creationDate": "2017-10-20T18:22:00Z",
+      "city": "São Paulo",
+      "siteURL": "https://www.ingresso.com/sao-paulo/home/filmes/os-incriveis-2",
+      "images": [
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20532-cartaz.jpg",
+          "type": "PosterPortrait"
+        },
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20532-destaque.jpg",
+          "type": "PosterHorizontal"
+        }
+      ],
+      "genres": [
+        "Animação",
+        "Aventura"
+      ],
+      "completeTags": [
+        {
+          "name": "Família",
+          "background": "",
+          "color": ""
+        },
+        {
+          "name": "Em Alta",
+          "background": "",
+          "color": ""
+        }
+      ],
+      "tags": [
+        "Família",
+        "Em Alta"
+      ],
+      "trailers": [
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=B4qVrpIBWq0",
+          "embeddedUrl": "//www.youtube.com/embed/B4qVrpIBWq0"
+        },
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=B4qVrpIBWq0",
+          "embeddedUrl": "//www.youtube.com/embed/B4qVrpIBWq0"
+        }
+      ]
+    },
+    {
+      "id": "21348",
+      "title": "Todo dia",
+      "originalTitle": "Everyday",
+      "ancineId": "",
+      "countryOrigin": "Estados Unidos",
+      "priority": 4,
+      "contentRating": "12 anos",
+      "duration": "91",
+      "rating": 0.0,
+      "synopsis": "Baseado no aclamado best-seller do The New York Times de David Levithan, “Todo Dia” conta a história de Rhiannon, uma garota de 16 anos que se apaixona por uma alma misteriosa chamada \"A\" que habita um corpo diferente todos os dias. Sentindo uma conexão incomparável, Rhiannon e A trabalham todos os dias para encontrar um ao outro, sem saber o que ou quem o próximo dia irá reservar. Quanto mais os dois se apaixonam, mais as realidades de amar alguém que é uma pessoa diferente a cada 24 horas afeta eles, levando o casal a enfrentar a decisão mais difícil que eles já tiveram que tomar.",
+      "cast": "Angourie Rice , Justice Smith, Jeni Ross\t\nLucas Jade Zumann, Rory McDonald, Katie Douglas, Jacob Batalon, Ian Alexander, Sean Jones, Colin Ford, Jake Sim, Nicole Law\t\n",
+      "director": "Michael Sucsy",
+      "distributor": "Paris Filmes",
+      "inPreSale": false,
+      "urlKey": "todo-dia",
+      "isPlaying": true,
+      "countIsPlaying": 191,
+      "premiereDate": {
+        "localDate": "2018-07-26T03:01:00+00:00",
+        "isToday": false,
+        "dayOfWeek": "quinta-feira",
+        "dayAndMonth": "26/07",
+        "hour": "03:01",
+        "year": "2018"
+      },
+      "creationDate": "0001-01-01T00:00:00Z",
+      "city": "São Paulo",
+      "siteURL": "https://www.ingresso.com/sao-paulo/home/filmes/todo-dia",
+      "images": [
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/21348-cartaz.jpg",
+          "type": "PosterPortrait"
+        },
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/21348-destaque.jpg",
+          "type": "PosterHorizontal"
+        }
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "completeTags": [
+        {
+          "name": "Em Alta",
+          "background": "",
+          "color": ""
+        }
+      ],
+      "tags": [
+        "Em Alta"
+      ],
+      "trailers": [
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=HUnTZny9E4g",
+          "embeddedUrl": "//www.youtube.com/embed/HUnTZny9E4g"
+        },
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=HUnTZny9E4g",
+          "embeddedUrl": "//www.youtube.com/embed/HUnTZny9E4g"
+        }
+      ]
+    },
+    {
+      "id": "20541",
+      "title": "Homem-Formiga e a Vespa",
+      "originalTitle": "Ant-Man and the Wasp",
+      "ancineId": "E1500406600000",
+      "countryOrigin": "EUA",
+      "priority": 5,
+      "contentRating": "12 anos",
+      "duration": "120",
+      "rating": 0.0,
+      "synopsis": "Depois dos acontecimentos de Capitão América: Guerra Civil, Scott Lang precisa lidar com as consequências de suas escolhas como super-herói e pai. Ainda esforçando-se para equilibrar a vida pessoal com suas responsabilidades como Homem-Formiga, ele é procurado por Hope van Dyne e Dr. Hank Pym para uma nova missão urgente. Scott deve vestir o traje mais uma vez e aprender a lutar ao lado da Vespa quando o time se reunir para descobrir segredos do passado.",
+      "cast": "David Dastmalchian, Evangeline Lilly, Michael Douglas, Michael Peña, Paul Rudd, T. I,Hannah John-Kamen, Laurence Fishburne,  Michelle Pfeiffer.",
+      "director": "Peyton Reed",
+      "distributor": "Disney",
+      "inPreSale": false,
+      "urlKey": "homem-formiga-e-a-vespa",
+      "isPlaying": true,
+      "countIsPlaying": 300,
+      "premiereDate": {
+        "localDate": "2018-07-05T03:00:00+00:00",
+        "isToday": false,
+        "dayOfWeek": "quinta-feira",
+        "dayAndMonth": "05/07",
+        "hour": "03:00",
+        "year": "2018"
+      },
+      "creationDate": "2017-10-20T19:43:00Z",
+      "city": "São Paulo",
+      "siteURL": "https://www.ingresso.com/sao-paulo/home/filmes/homem-formiga-e-a-vespa",
+      "images": [
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20541-cartaz.jpg",
+          "type": "PosterPortrait"
+        },
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20541-destaque.jpg",
+          "type": "PosterHorizontal"
+        }
+      ],
+      "genres": [
+        "Ação",
+        "Aventura"
+      ],
+      "completeTags": [
+        {
+          "name": "Família",
+          "background": "",
+          "color": ""
+        },
+        {
+          "name": "Em Alta",
+          "background": "",
+          "color": ""
+        }
+      ],
+      "tags": [
+        "Família",
+        "Em Alta"
+      ],
+      "trailers": [
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=i3gnLBeRrIY",
+          "embeddedUrl": "//www.youtube.com/embed/i3gnLBeRrIY"
+        },
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=i3gnLBeRrIY",
+          "embeddedUrl": "//www.youtube.com/embed/i3gnLBeRrIY"
+        }
+      ]
+    },
+    {
+      "id": "21595",
+      "title": "Ana e Vitória",
+      "originalTitle": "Ana e Vitória",
+      "ancineId": "",
+      "countryOrigin": "Brasil",
+      "priority": 6,
+      "contentRating": "Verifique a Classificação",
+      "duration": "116",
+      "rating": 0.0,
+      "synopsis": "Ana e Vitória se reencontram em uma festa, e após ouvir Vitória cantando, Ana oferece para gravarem uma música juntas. Isso marca o início da dupla, que faz um sucesso arrebatador. As duas precisam aprender a lidar com fãs e fama, ao mesmo tempo que ainda estão tentando encontrar quem elas realmente são.\n\n",
+      "cast": "Ana Caetano, Vitória Falcão, Thati Lopes",
+      "director": "Ana Caetano, Vitória Falcão, Thati Lopes",
+      "distributor": "Galeria Distribuidora",
+      "inPreSale": false,
+      "urlKey": "ana-e-vitoria",
+      "isPlaying": true,
+      "countIsPlaying": 97,
+      "premiereDate": {
+        "localDate": "2018-08-02T03:01:00+00:00",
+        "isToday": false,
+        "dayOfWeek": "quinta-feira",
+        "dayAndMonth": "02/08",
+        "hour": "03:01",
+        "year": "2018"
+      },
+      "creationDate": "0001-01-01T00:00:00Z",
+      "city": "São Paulo",
+      "siteURL": "https://www.ingresso.com/sao-paulo/home/filmes/ana-e-vitoria",
+      "images": [
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/21595-cartaz.jpg",
+          "type": "PosterPortrait"
+        },
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/21595-destaque.jpg",
+          "type": "PosterHorizontal"
+        }
+      ],
+      "genres": [
+        "Comédia Romântica"
+      ],
+      "completeTags": [
+        {
+          "name": "Culturais",
+          "background": "",
+          "color": ""
+        }
+      ],
+      "tags": [
+        "Culturais"
+      ],
+      "trailers": [
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=Fk372ee-guk",
+          "embeddedUrl": "//www.youtube.com/embed/Fk372ee-guk"
+        },
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=Fk372ee-guk",
+          "embeddedUrl": "//www.youtube.com/embed/Fk372ee-guk"
+        }
+      ]
+    },
+    {
+      "id": "20543",
+      "title": "Jurassic World: Reino Ameaçado",
+      "originalTitle": "Jurassic World: Fallen Kingdom",
+      "ancineId": "E1800169900000",
+      "countryOrigin": "EUA",
+      "priority": 7,
+      "contentRating": "12 anos",
+      "duration": "128",
+      "rating": 0.0,
+      "synopsis": "Quatro anos após o fechamento do Jurassic Park, um vulcão prestes a entrar em erupção põe em risco a vida na ilha Nublar. No local não há mais qualquer presença humana, com os dinossauros vivendo livremente. Diante da situação, é preciso tomar uma decisão: deve-se retornar à ilha para salvar os animais ou abandoná-los para uma nova extinção? Decidida a resgatá-los, Claire (Bryce Dallas Howard) convoca Owen (Chris Pratt) a retornar à ilha com ela.",
+      "cast": "Chris Pratt, Bryce Dallas Howard, BD Wong, James Cromwell, Ted Levine, Justice Smith, Geraldine Chaplin, Daniella Pineda, Toby Jones, Rafe Spall e Jeff Goldblum",
+      "director": "J. A. Bayona",
+      "distributor": "Universal Pictures",
+      "inPreSale": false,
+      "urlKey": "jurassic-world-reino-ameacado",
+      "isPlaying": true,
+      "countIsPlaying": 160,
+      "premiereDate": {
+        "localDate": "2018-06-21T03:00:00+00:00",
+        "isToday": false,
+        "dayOfWeek": "quinta-feira",
+        "dayAndMonth": "21/06",
+        "hour": "03:00",
+        "year": "2018"
+      },
+      "creationDate": "2017-10-20T19:55:00Z",
+      "city": "São Paulo",
+      "siteURL": "https://www.ingresso.com/sao-paulo/home/filmes/jurassic-world-reino-ameacado",
+      "images": [
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20543-cartaz.jpg",
+          "type": "PosterPortrait"
+        },
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20543-destaque.jpg",
+          "type": "PosterHorizontal"
+        }
+      ],
+      "genres": [
+        "Ação",
+        "Aventura",
+        "Ficção"
+      ],
+      "completeTags": [
+        {
+          "name": "Família",
+          "background": "",
+          "color": ""
+        },
+        {
+          "name": "Em Alta",
+          "background": "",
+          "color": ""
+        }
+      ],
+      "tags": [
+        "Família",
+        "Em Alta"
+      ],
+      "trailers": [
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=yX9eQwq-XJo",
+          "embeddedUrl": "//www.youtube.com/embed/yX9eQwq-XJo"
+        },
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=HeE1knF3hXs",
+          "embeddedUrl": "//www.youtube.com/embed/HeE1knF3hXs"
+        }
+      ]
+    },
+    {
+      "id": "20906",
+      "title": "Arranha-Céu: Coragem sem Limite",
+      "originalTitle": "Skyscraper",
+      "ancineId": "",
+      "countryOrigin": "Estados Unidos",
+      "priority": 8,
+      "contentRating": "12 anos",
+      "duration": "102",
+      "rating": 0.0,
+      "synopsis": "Will Ford é um veterano de guerra dos Estados Unidos e ex-líder da operação de resgate do FBI, que atualmente é responsável por avaliar a segurança de arranha-céus. Em operação na China, Ford encontra o mais seguro e alto dos prédios em chamas e é considerado culpado por isso. O agente precisará encontrar os responsáveis pelo incêndio e, de alguma forma, limpar seu nome e resgatar sua família que está presa no interior do edifício, acima da linha do fogo.",
+      "cast": "Dwayne Johnson, Neve Campbell, Chin Han",
+      "director": " Rawson Marshall Thurber",
+      "distributor": "Universal Pictures",
+      "inPreSale": false,
+      "urlKey": "arranha-ceu-coragem-sem-limite",
+      "isPlaying": true,
+      "countIsPlaying": 252,
+      "premiereDate": {
+        "localDate": "2018-07-12T03:00:00+00:00",
+        "isToday": false,
+        "dayOfWeek": "quinta-feira",
+        "dayAndMonth": "12/07",
+        "hour": "03:00",
+        "year": "2018"
+      },
+      "creationDate": "0001-01-01T00:00:00Z",
+      "city": "São Paulo",
+      "siteURL": "https://www.ingresso.com/sao-paulo/home/filmes/arranha-ceu-coragem-sem-limite",
+      "images": [
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20906-cartaz.jpg",
+          "type": "PosterPortrait"
+        },
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/20906-destaque.jpg",
+          "type": "PosterHorizontal"
+        }
+      ],
+      "genres": [
+        "Ação",
+        "Suspense"
+      ],
+      "completeTags": [
+        {
+          "name": "Em Alta",
+          "background": "",
+          "color": ""
+        }
+      ],
+      "tags": [
+        "Em Alta"
+      ],
+      "trailers": [
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=2PQrVmenL2U",
+          "embeddedUrl": "//www.youtube.com/embed/2PQrVmenL2U"
+        },
+        {
+          "type": "Youtube",
+          "url": "https://www.youtube.com/watch?v=2PQrVmenL2U",
+          "embeddedUrl": "//www.youtube.com/embed/2PQrVmenL2U"
+        }
+      ]
+    },
+    {
+      "id": "21553",
+      "title": "Uma Quase Dupla",
+      "originalTitle": "Uma Quase Dupla",
+      "ancineId": "",
+      "countryOrigin": "",
+      "priority": 9,
+      "contentRating": "12 anos",
+      "duration": "90",
+      "rating": 0.0,
+      "synopsis": "Quando uma série de assassinatos abala a rotina da cidade de Joinlândia, o calmo e pacato subdelegado Claudio (Cauã Reymond) receberá a ajuda da destemida e experiente investigadora Keyla (Tatá Werneck) nas investigações. No entanto, a diferença de ritmo e a falta de química dos dois só atrapalhará a solução do caso.",
+      "cast": "Tatá Werneck, Cauã Reymond, Louise Cardoso",
+      "director": "Marcus Baldini",
+      "distributor": "Paris Filmes",
+      "inPreSale": false,
+      "urlKey": "uma-quase-dupla",
+      "isPlaying": true,
+      "countIsPlaying": 280,
+      "premiereDate": {
+        "localDate": "2018-07-19T03:00:00+00:00",
+        "isToday": false,
+        "dayOfWeek": "quinta-feira",
+        "dayAndMonth": "19/07",
+        "hour": "03:00",
+        "year": "2018"
+      },
+      "creationDate": "0001-01-01T00:00:00Z",
+      "city": "São Paulo",
+      "siteURL": "https://www.ingresso.com/sao-paulo/home/filmes/uma-quase-dupla",
+      "images": [
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/21553-cartaz.jpg",
+          "type": "PosterPortrait"
+        },
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/21553-destaque.jpg",
+          "type": "PosterHorizontal"
+        }
+      ],
+      "genres": [
+        "Comédia"
+      ],
+      "completeTags": [
+        {
+          "name": "Em Alta",
+          "background": "",
+          "color": ""
+        }
+      ],
+      "tags": [
+        "Em Alta"
+      ],
+      "trailers": []
+    },
+    {
+      "id": "21605",
+      "title": "Vidas à deriva",
+      "originalTitle": "Adrift",
+      "ancineId": "",
+      "countryOrigin": "",
+      "priority": 10,
+      "contentRating": "12 anos",
+      "duration": "0",
+      "rating": 0.0,
+      "synopsis": "O filme é baseado na história real de dois espíritos livres, cujo encontro os leva primeiro ao amor e depois para a aventura de uma vida. Quando Tami Oldham  e Richard Sharp partem em uma jornada pelo oceano, não poderiam prever que estariam navegando para um dos furacões mais catastróficos da história.\n\n",
+      "cast": "Shailene Woodley, Sam Claflin, Jeffrey Thomas, Grace Palmer, Elizabeth Hawthorne, Tami Ashcraft, Zac Beresford, Luna Campbell, Siale Tunoka",
+      "director": "Baltasar Kormákur",
+      "distributor": "Diamond Films",
+      "inPreSale": false,
+      "urlKey": "vidas-a-deriva",
+      "isPlaying": true,
+      "countIsPlaying": 78,
+      "creationDate": "0001-01-01T00:00:00Z",
+      "city": "São Paulo",
+      "siteURL": "https://www.ingresso.com/sao-paulo/home/filmes/vidas-a-deriva",
+      "images": [
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/21605-cartaz.jpg",
+          "type": "PosterPortrait"
+        },
+        {
+          "url": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/21605-destaque.jpg",
+          "type": "PosterHorizontal"
+        }
+      ],
+      "genres": [
+        "Ação"
+      ],
+      "completeTags": [],
+      "tags": [],
+      "trailers": []
+    }
+  ],
+  "count": 10
+}

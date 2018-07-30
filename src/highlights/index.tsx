@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators, Dispatch } from 'redux';
 
 import Background from './background';
 import Carousel from './swiper';
@@ -21,7 +21,7 @@ class Highlights extends React.Component<MainProps, State> {
   };
   props: MainProps;
   state: State = {
-    movies: this.props.movies
+    movies: this.props.movies || []
   };
 
   componentDidUpdate(prevProps: MainProps, prevState: State) {
@@ -58,7 +58,7 @@ class Highlights extends React.Component<MainProps, State> {
     const { movies } = this.state;
     return (
       <div id="ing-highlights">
-        <Background items={movies} current={this.props.initialIndex} />
+        <Background items={movies} current={0} />
         <div className="container">
           <div className="ing-highlights-description">
             <span className="ing-highlights-tag">{this.props.tag}</span>
@@ -67,17 +67,19 @@ class Highlights extends React.Component<MainProps, State> {
         </div>
         <Carousel
           items={movies}
-          onSlideChange={currentItemIndex =>
-            this.props.setCurrent(currentItemIndex)
+          onSlideChange={currentItemIndex => {
+              if ( this.props.setCurrent) {
+                this.props.setCurrent(currentItemIndex);
+              }
+            }
           }
-          activeSlideKey={this.props.initialIndex - 1}
         />
       </div>
     );
   }
 }
 
-const mapDispatchToProps = dispatch =>
+const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators(
     {
       setCurrent

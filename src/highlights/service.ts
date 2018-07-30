@@ -20,8 +20,10 @@ const getImageFromMovie = (
   images: Image[] = [],
   type: string = 'PosterPortrait'
 ) => {
-  if (!images.length) return placeholder;
-  var img = images.find(img => img.type == type);
+  if (!images.length) {
+    return placeholder;
+  }
+  const img = images.find((i: {type: string}) => i.type === type);
   return img && img.url ? img.url : placeholder;
 };
 

@@ -4,12 +4,11 @@ import CarouselItem from './carousel-item';
 
 export default class Carousel extends React.Component<CarouselProps> {
   static defaultProps: CarouselProps = {
-    activeSlideKey: 0
+    items: []
   };
-  swiper: any = null;
+  swiper: Swiper;
   settings = {
     // slideClass: "carousel-item",
-    activeSlideKey: String(this.props.activeSlideKey),
     oberserver: true,
     watchSlidesVisibility: true,
     shouldSwiperUpdate: true,
@@ -53,7 +52,9 @@ export default class Carousel extends React.Component<CarouselProps> {
     on: {
       slideChangeTransitionStart: () => {
         if (this.swiper === null || this.swiper.destroyed) { return; }
-        this.props.onSlideChange(this.swiper.realIndex);
+        if (typeof this.props.onSlideChange === 'function') {
+          this.props.onSlideChange(this.swiper.realIndex);
+        }
       }
     }
   };
@@ -66,7 +67,7 @@ export default class Carousel extends React.Component<CarouselProps> {
     ));
     return (
       <Slider
-        ref={node => (node ? (this.swiper = node.swiper) : null)}
+        ref={(node: {swiper: Swiper}) => (node ? (this.swiper = node.swiper) : null)}
         {...this.settings}
       >
         {items}
@@ -77,6 +78,5 @@ export default class Carousel extends React.Component<CarouselProps> {
 
 interface CarouselProps {
   items: Movie[];
-  onSlideChange?: () => any;
-  activeSlideKey: number;
+  onSlideChange?: (currentIndex: number) => void;
 }

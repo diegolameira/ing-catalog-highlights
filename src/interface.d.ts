@@ -4,6 +4,11 @@ interface Window {
   trackProductList: (movies: Movie[], description: string) => void,
 }
 
+interface Swiper {
+  destroyed: boolean;
+  realIndex: number;
+}
+
 interface MainProps {
   movies?: Movie[];
   cityId?: number;

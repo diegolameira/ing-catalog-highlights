@@ -12,8 +12,8 @@ class Background extends React.Component<Props> {
     const { items = [], current = 0 } = this.props;
 
     return (
-      <div className="ing-highlights-background container">
-        <div className="ing-highlights-background-inner">
+      <div className="ing-carouselBackground container">
+        <div className="ing-carouselBackground__inner">
           {
             items
               .map(getMovieBackground)

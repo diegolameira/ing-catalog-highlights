@@ -13,17 +13,17 @@ class Descriptor extends React.Component<Props> {
     return (
       items.length && (
         <div className="container">
-          <div className="ing-highlights-description">
-            <span className="ing-highlights-tag">{this.props.tag}</span>
-            <a className="ing-highlights-descriptor" onClick={() => onClick && onClick(currentItem, current)}>
-              <h1 className="line-clamp-2">
+          <div className="ing-carouselDescription">
+            <span className="ing-carouselDescription__tagTitle">{this.props.tag}</span>
+            <a className="ing-carouselDescription__link" onClick={() => onClick && onClick(currentItem, current)}>
+              <h1 className="ing-carouselDescription__title line-clamp-2">
                 {currentItem.title}
               </h1>
-              <div className="ing-highlights-descriptor-tags">
+              <div className="ing-carouselDescription__tags">
                 {currentItem.tags &&
                   currentItem.tags.map((tag, key) => (
                     <span
-                      className={`tag tag-category-${slugify(tag, { lower: true })}`}
+                      className={`ing-carouselDescription__tagItem tag tag-category-${slugify(tag, { lower: true })}`}
                       key={key}
                     >
                       {tag}
@@ -31,7 +31,7 @@ class Descriptor extends React.Component<Props> {
                   ))}
                 {currentItem.genres &&
                   currentItem.genres.map((tag, key) => (
-                    <span className="tag tag-genre" key={key}>
+                    <span className="ing-carouselDescription__tagItem tag tag-genre" key={key}>
                       {tag}
                     </span>
                   ))}

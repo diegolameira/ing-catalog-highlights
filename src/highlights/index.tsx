@@ -75,8 +75,7 @@ class Highlights extends React.Component<MainProps, State> {
               if ( this.props.setCurrent) {
                 this.props.setCurrent(currentItemIndex);
               }
-            }
-          }
+            }}
           />
         </div>
       </div>

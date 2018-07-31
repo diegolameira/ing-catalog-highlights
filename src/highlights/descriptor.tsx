@@ -12,28 +12,31 @@ class Descriptor extends React.Component<Props> {
     const currentItem = items[current] || {};
     return (
       items.length && (
-        <div className="ing-highlights-descriptor">
-          <h1>
-            <a onClick={() => onClick && onClick(currentItem, current)}>
-              {currentItem.title}
+        <div className="container">
+          <div className="ing-highlights-description">
+            <span className="ing-highlights-tag">{this.props.tag}</span>
+            <a className="ing-highlights-descriptor" onClick={() => onClick && onClick(currentItem, current)}>
+              <h1 className="line-clamp-2">
+                {currentItem.title}
+              </h1>
+              <div className="ing-highlights-descriptor-tags">
+                {currentItem.tags &&
+                  currentItem.tags.map((tag, key) => (
+                    <span
+                      className={`tag tag-category-${slugify(tag, { lower: true })}`}
+                      key={key}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                {currentItem.genres &&
+                  currentItem.genres.map((tag, key) => (
+                    <span className="tag tag-genre" key={key}>
+                      {tag}
+                    </span>
+                  ))}
+              </div>
             </a>
-          </h1>
-          <div className="ing-highlights-descriptor-tags">
-            {currentItem.tags &&
-              currentItem.tags.map((tag, key) => (
-                <span
-                  className={`tag tag-category-${slugify(tag, { lower: true })}`}
-                  key={key}
-                >
-                  {tag}
-                </span>
-              ))}
-            {currentItem.genres &&
-              currentItem.genres.map((tag, key) => (
-                <span className="tag tag-genre" key={key}>
-                  {tag}
-                </span>
-              ))}
           </div>
         </div>
       )
@@ -48,6 +51,7 @@ const mapStateToProps = state => ({
 export default connect<{}, {}, Props>(mapStateToProps)(Descriptor);
 
 interface Props {
+  tag?: string;
   items?: Movie[];
   current?: number;
   onClick?: (movie: Movie, idx: number) => void;

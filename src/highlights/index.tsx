@@ -5,7 +5,6 @@ import { bindActionCreators, Dispatch } from 'redux';
 import Background from './background';
 import Carousel from './swiper';
 import Descriptor from './descriptor';
-import './style.css';
 
 import { getHighlights } from './service';
 import { setCurrent } from './actions';
@@ -57,23 +56,29 @@ class Highlights extends React.Component<MainProps, State> {
   render() {
     const { movies } = this.state;
     return (
-      <div id="ing-highlights">
-        <Background items={movies} current={0} />
-        <div className="container">
-          <div className="ing-highlights-description">
-            <span className="ing-highlights-tag">{this.props.tag}</span>
-            <Descriptor items={movies} />
-          </div>
-        </div>
-        <Carousel
-          items={movies}
-          onSlideChange={currentItemIndex => {
+      <div className="ing-carousel">
+        <div className="ing-carousel__inner">
+          <Background items={movies} current={0} />
+          <Descriptor
+            tag={this.props.tag}
+            items={movies}
+            onClick={(movie: Movie, idx: number) => {
+              if (typeof window.trackProductClick === 'function') {
+                window.trackProductClick('Home - Highlights', movie, idx);
+              }
+              window.location.href = movie.siteURL;
+            }}
+          />
+          <Carousel
+            items={movies}
+            onSlideChange={currentItemIndex => {
               if ( this.props.setCurrent) {
                 this.props.setCurrent(currentItemIndex);
               }
             }
           }
-        />
+          />
+        </div>
       </div>
     );
   }

@@ -2,20 +2,19 @@ import * as React from 'react';
 
 import { getMovieCover } from './service';
 
-export default ({ movie }: CarouselItemProps) => (
-  <div className="swiper-slide">
-    <div className="ing-highlights-item">
+export default ({ movie, onClick }: CarouselItemProps) => (
+  <div className="swiper-slide ing-carouselItem">
+    <div className="ing-carouselItem__inner">
       <a
-        className="ing-highlights-item-link"
-        onClick={() => {
-          if (typeof window.trackProductClick === 'function') {
-            window.trackProductClick('Home - Highlights');
-          }
-          window.location.href = movie.siteURL;
-        }}
+        className="ing-carouselItem__link"
+        onClick={() => onClick && onClick()}
       >
-        <img src={getMovieCover(movie)} />
-        <span className="ing-highlights-item-title">{movie.title}</span>
+        <img src={getMovieCover(movie)} className="ing-carouselItem__cover" />
+        <span className="ing-carouselItem__title">
+          <span className="ing-carouselItem__title__inner line-clamp-2">
+            {movie.title}
+          </span>
+        </span>
       </a>
     </div>
   </div>
@@ -23,4 +22,5 @@ export default ({ movie }: CarouselItemProps) => (
 
 interface CarouselItemProps {
   movie: Movie;
+  onClick?: () => void;
 }

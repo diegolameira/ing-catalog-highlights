@@ -4,6 +4,8 @@
   "private": true,
   "main": "src/index.tsx",
   "dependencies": {
+    "node-sass-chokidar": "^1.3.3",
+    "npm-run-all": "^4.1.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-id-swiper": "1.6.6",
@@ -16,8 +18,12 @@
     "slugify": "1.3.0"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
+    "build-css": "node-sass-chokidar --include-path ./public --include-path ./node_modules public/ -o public/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./public --include-path ./node_modules public/ -o public/ --watch --recursive",
+    "start-js": "react-scripts-ts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts-ts build",
+    "build": "npm-run-all build-css build-js",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   },
@@ -29,7 +35,6 @@
     "@types/react-redux": "6.0.5",
     "@types/react-slick": "0.23.1",
     "@types/redux-logger": "3.0.6",
-    "@types/slick-carousel": "1.6.32",
     "typescript": "^2.7.2"
   }
 }

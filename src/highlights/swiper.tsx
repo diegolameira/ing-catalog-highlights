@@ -51,7 +51,7 @@ export default class Carousel extends React.Component<CarouselProps> {
     },
     on: {
       slideChangeTransitionStart: () => {
-        if (this.swiper === null || this.swiper.destroyed) { return; }
+        if (!this.swiper || this.swiper.destroyed) { return; }
         if (typeof this.props.onSlideChange === 'function') {
           this.props.onSlideChange(this.swiper.realIndex);
         }
@@ -63,7 +63,16 @@ export default class Carousel extends React.Component<CarouselProps> {
   }
   render() {
     const items = this.props.items.map((movie, idx) => (
-      <CarouselItem key={idx} movie={movie} />
+      <CarouselItem
+        key={idx}
+        movie={movie}
+        onClick={() => {
+          if (typeof window.trackProductClick === 'function') {
+            window.trackProductClick('Home - Highlights', movie, idx);
+          }
+          window.location.href = movie.siteURL;
+        }}
+      />
     ));
     return (
       <Slider

@@ -1,7 +1,7 @@
 interface Window {
   loadHighlights?: (selector: string, props?: MainProps) => void,
-  trackProductClick: (description: string) => void,
-  trackProductList: (movies: Movie[], description: string) => void,
+  trackProductClick: (listName: string, movie: Movie, index: number) => void,
+  trackProductList: (movies: Movie[], listName: string) => void,
 }
 
 interface Swiper {

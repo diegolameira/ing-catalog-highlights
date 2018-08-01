@@ -3,8 +3,7 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-height: 1em;
-  max-height: 1.9em;
+  max-height: 2em;
 }
 
 /*==============================================
@@ -47,8 +46,12 @@ Carousel Background
     /* expand the container padding */
     min-width: calc(100% + 20px);
     left: -10px;
-    opacity: 0.3;
+    opacity: 0.6;
     filter: blur(4px);
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
   }
 
   @media (min-width: 768px) {
@@ -123,12 +126,10 @@ Carousel Description
   padding: 10px;
   padding-top: 120px;
   z-index: 4;
-  // pointer-events: none;
 
-  // @media (min-width: 768px) {
-  //   cursor: pointer;
-  //   pointer-events: all;
-  // }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding-left: 50px;
+  }
 }
 
 .ing-carouselDescription__tagTitle {
@@ -150,6 +151,7 @@ Carousel Description
 
 .ing-carouselDescription__link {
   display: none;
+  cursor: pointer;
 }
 
 .ing-carouselDescription__title {
@@ -173,12 +175,12 @@ Carousel Item
 .ing-carouselItem__inner {
   position: relative;
   transition: all ease-in-out 0.3s;
-  /* transform: scale(0.8); */
   box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 10px;
   overflow: hidden;
+  transform: scale(0.95);
 
   .ing-carouselItem[class*="swiper-slide-active"] & {
-    transform: scale(1.25);
+    transform: scale(1.28);
     box-shadow: rgba(0, 0, 0, 0.2) 2px 6px 10px;
   }
 }
@@ -203,8 +205,8 @@ Carousel Item
 }
 
 .ing-carouselItem__title__inner {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 13px;
+  line-height: 1.13em;
   font-family: Klavika-Regular;
   font-weight: 500;
   position: absolute;
@@ -293,7 +295,7 @@ Carousel Item
       }
     }
 
-    @media (min-width: 1023px) {
+    @media (min-width: 1024px) {
       .ing-carouselDescription {
         max-width: 320px;
       }

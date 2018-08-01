@@ -48,12 +48,75 @@
 
   <div id="root"></div>
 
+  <!-- TODO: Use global tracking methods instead of reimplementing them -->
   <script>
-    function trackProductClick() {
-      console.log(arguments);
+    function trackProductClick(listName, product, productIndex) {
+      if (typeof dataLayerVitrio !== 'undefined') {
+        if (typeof product === 'object') {
+          product.position = productIndex + 1;
+        }
+        dataLayerVitrio.push({
+          event: 'productClick',
+          ecommerce: {
+            click: {
+              actionField: {
+                list: listName
+              },
+              products: [product]
+            }
+          }
+        });
+      }
+      if (typeof dataLayer !== 'undefined') {
+          dataLayer.push({
+            event: 'productClick',
+            eventLabel: product.title,
+            eventCategory: 'Product List Performance',
+            ecommerce: {
+              click: {
+                actionField: {
+                  list: listName
+                },
+                products: [{
+                  name: product.title,
+                  id: product.id,
+                  brand: product.distributor,
+                  position: String(productIndex + 1)
+                }]
+              }
+            }
+        });
+      }
     }
-    function trackProductList() {
-      console.log(arguments);
+    function trackProductList(products, listName) {
+      if (typeof dataLayerVitrio !== 'undefined') {
+        dataLayerVitrio.push({
+          ecommerce: {
+            currencyCode: 'BRL',
+            event: 'productImpression',
+            impressions: products
+          }
+        });
+      }
+      if (typeof dataLayer !== 'undefined') {
+        products.forEach(function(product, index) {
+          dataLayer.push({
+            ecommerce: {
+              impressions: [{
+                brand: product.distributor,
+                id: product.id,
+                list: listName,
+                name: product.title,
+                position: String(index + 1)
+              }]
+            },
+            event: 'productView',
+            eventCategory: 'Product List Performance',
+            eventLabel: product.title,
+            nonInteraction: true
+          });
+        });
+      }
     }
   </script>
 

@@ -2,9 +2,18 @@ import * as React from 'react';
 import Slider from 'react-id-swiper/lib/custom';
 import CarouselItem from './carousel-item';
 
+function make(): Movie[] {
+  return Array.from({length: 10}, () => ({
+    id: '',
+    title: '',
+    siteURL: '',
+    images: []
+  }));
+}
+
 export default class Carousel extends React.Component<CarouselProps> {
   static defaultProps: CarouselProps = {
-    items: []
+    items: make()
   };
   swiper: Swiper;
   settings = {

@@ -40,13 +40,14 @@ Carousel Background
   transform: translateX(-50%);
   left: 50%;
   width: 100%;
+  overflow: hidden;
 
   img {
     position: relative;
     /* expand the container padding */
     min-width: calc(100% + 20px);
     left: -10px;
-    opacity: 0.6;
+    opacity: 0.4;
     filter: blur(4px);
   }
 
@@ -56,6 +57,7 @@ Carousel Background
 
   @media (min-width: 768px) {
     img {
+      opacity: 0.6;
       filter: none;
     }
 
@@ -212,7 +214,16 @@ Carousel Item
   position: absolute;
   left: 0;
   bottom: 0;
+  padding-right: 30px;
   margin: 10px;
+}
+
+.ing-carouselItemRating {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+  box-sizing: border-box;
 }
 
 .ing-carousel {
@@ -246,6 +257,10 @@ Carousel Item
   .swiper-button-next {
     display: none;
   }
+
+/*==============================================
+Mobile Only
+==============================================*/
 
   &:not(.mobile-only) {
     @media (min-width: 425px) {

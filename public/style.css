@@ -172,7 +172,8 @@ Carousel Item
   right: 0;
   bottom: 0;
   margin: 10px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  z-index: 2; }
 
 .ing-carousel {
   /*==============================================
@@ -231,3 +232,19 @@ Mobile Only
   @media (min-width: 1024px) {
     .ing-carousel:not(.mobile-only) .ing-carouselDescription {
       max-width: 320px; } }
+
+/*==============================================
+NEED FIX
+mobile and mobileOnly items margin compensation
+==============================================*/
+@media (max-width: 767px) {
+  :not(.swiper-slide-active) > .ing-carouselItem__inner {
+    transform: translateX(-10px); }
+  .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
+    transform: translateX(10px); } }
+
+.ing-carousel.mobile-only :not(.swiper-slide-active) > .ing-carouselItem__inner {
+  transform: translateX(-10px); }
+
+.ing-carousel.mobile-only .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
+  transform: translateX(10px); }

@@ -55,8 +55,9 @@ class Highlights extends React.Component<MainProps, State> {
 
   render() {
     const { movies } = this.state;
+    const { isMobileOnly } = this.props;
     return (
-      <div className="ing-carousel">
+      <div className={`ing-carousel ${isMobileOnly ? 'mobile-only' : ''}`}>
         <div className="ing-carousel__inner">
           <Background items={movies} current={0} />
           <Descriptor

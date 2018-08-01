@@ -10,7 +10,7 @@ import Highlights from './highlights';
 const root = document.querySelector('#root');
 render(
   <Provider store={store}>
-    <Highlights tag="Em Alta" />
+    <Highlights tag="Em Alta" isMobileOnly={true} />
   </Provider>,
   root
 );

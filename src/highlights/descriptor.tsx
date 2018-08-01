@@ -21,7 +21,7 @@ class Descriptor extends React.Component<Props> {
               </h1>
               <div className="ing-carouselDescription__tags">
                 {currentItem.tags &&
-                  currentItem.tags.map((tag, key) => (
+                  currentItem.tags.filter(t => t !== this.props.tag).map((tag, key) => (
                     <span
                       className={`ing-carouselDescription__tagItem tag tag-category-${slugify(tag, { lower: true })}`}
                       key={key}

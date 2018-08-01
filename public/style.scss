@@ -325,22 +325,26 @@ NEED FIX
 mobile and mobileOnly items margin compensation
 ==============================================*/
 
-@media (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 767px) {
   :not(.swiper-slide-active) > .ing-carouselItem__inner {
-    transform: translateX(-10px);
+    transform: translateX(-15%);
   }
 
   .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
-    transform: translateX(10px);
+    transform: translateX(15%);
   }
 }
 
-.ing-carousel.mobile-only {
-  :not(.swiper-slide-active) > .ing-carouselItem__inner {
-    transform: translateX(-10px);
+@media (min-width: 768px) {
+
+  .ing-carousel.mobile-only {
+    :not(.swiper-slide-active) > .ing-carouselItem__inner {
+      transform: translateX(-10%);
+    }
+
+    .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
+      transform: translateX(10%);
+    }
   }
 
-  .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
-    transform: translateX(10px);
-  }
 }

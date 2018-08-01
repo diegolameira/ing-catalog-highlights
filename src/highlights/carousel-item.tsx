@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { getMovieCover } from './service';
+import { Classification } from './classification';
 
 export default ({ movie, onClick }: CarouselItemProps) => (
   <div className="swiper-slide ing-carouselItem">
@@ -15,6 +16,7 @@ export default ({ movie, onClick }: CarouselItemProps) => (
             {movie.title}
           </span>
         </span>
+        <Classification rating={movie.contentRating} />
       </a>
     </div>
   </div>

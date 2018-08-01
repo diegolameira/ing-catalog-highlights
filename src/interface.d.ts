@@ -17,6 +17,7 @@ interface MainProps {
   tag?: string;
   initialIndex?: number;
   setCurrent?: (current: number) => void;
+  isMobileOnly?: boolean;
 }
 
 interface Date {

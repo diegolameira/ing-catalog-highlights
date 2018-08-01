@@ -50,7 +50,7 @@
 
   <!-- TODO: Use global tracking methods instead of reimplementing them -->
   <script>
-    function trackProductClick(listName, product, productIndex) {
+    function trackHighlightsProductClick(listName, product, productIndex) {
       if (typeof dataLayerVitrio !== 'undefined') {
         if (typeof product === 'object') {
           product.position = productIndex + 1;
@@ -88,7 +88,7 @@
         });
       }
     }
-    function trackProductList(products, listName) {
+    function trackHighlightsProductList(products, listName) {
       if (typeof dataLayerVitrio !== 'undefined') {
         dataLayerVitrio.push({
           ecommerce: {

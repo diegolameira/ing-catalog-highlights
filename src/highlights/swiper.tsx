@@ -50,7 +50,7 @@ export default class Carousel extends React.Component<CarouselProps> {
       }
     },
     on: {
-      slideChangeTransitionStart: () => {
+      transitionEnd: () => {
         if (!this.swiper || this.swiper.destroyed) { return; }
         if (typeof this.props.onSlideChange === 'function') {
           this.props.onSlideChange(this.swiper.realIndex);

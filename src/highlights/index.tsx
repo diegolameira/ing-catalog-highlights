@@ -25,10 +25,10 @@ class Highlights extends React.Component<MainProps, State> {
 
   componentDidUpdate(prevProps: MainProps, prevState: State) {
     if (
-      typeof window.trackProductList === 'function' &&
+      typeof window.trackHighlightsProductList === 'function' &&
       prevState.movies !== this.state.movies
     ) {
-      window.trackProductList(this.state.movies, 'Home - Highlights');
+      window.trackHighlightsProductList(this.state.movies, 'Home - Highlights');
     }
   }
 
@@ -36,8 +36,8 @@ class Highlights extends React.Component<MainProps, State> {
     const { initialIndex, movies } = this.props;
     if (!movies || !movies.length) {
       this.load();
-    } else if (typeof window.trackProductList === 'function') {
-      window.trackProductList(movies, 'Home - Highlights');
+    } else if (typeof window.trackHighlightsProductList === 'function') {
+      window.trackHighlightsProductList(movies, 'Home - Highlights');
     }
     if (this.props.setCurrent && initialIndex) {
       this.props.setCurrent(initialIndex);
@@ -64,8 +64,8 @@ class Highlights extends React.Component<MainProps, State> {
             tag={this.props.tag}
             items={movies}
             onClick={(movie: Movie, idx: number) => {
-              if (typeof window.trackProductClick === 'function') {
-                window.trackProductClick('Home - Highlights', movie, idx);
+              if (typeof window.trackHighlightsProductClick === 'function') {
+                window.trackHighlightsProductClick('Home - Highlights', movie, idx);
               }
               window.location.href = movie.siteURL;
             }}

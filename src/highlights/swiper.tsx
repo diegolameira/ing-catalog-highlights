@@ -76,8 +76,8 @@ export default class Carousel extends React.Component<CarouselProps> {
         key={idx}
         movie={movie}
         onClick={() => {
-          if (typeof window.trackProductClick === 'function') {
-            window.trackProductClick('Home - Highlights', movie, idx);
+          if (typeof window.trackHighlightsProductClick === 'function') {
+            window.trackHighlightsProductClick('Home - Highlights', movie, idx);
           }
           window.location.href = movie.siteURL;
         }}

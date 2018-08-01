@@ -6,17 +6,20 @@ import { store } from './highlights/store';
 
 import Highlights from './highlights';
 
-// //port { items } from "./highlights/data.json";
-const root = document.querySelector('#root');
-render(
-  <Provider store={store}>
-    <Highlights tag="Em Alta" isMobileOnly={true} />
-  </Provider>,
-  root
-);
+// port { items } from "./highlights/data.json";
 
-// window.loadHighlights = (selector, props: MainProps) => {
-//   const root = document.querySelector(selector);
-//   if (!root) return;
-//   render(<Highlights {...props} />, root);
-// };
+window.loadHighlights = (selector, props: MainProps) => {
+  const elm = document.querySelector(selector);
+  if (!elm) { return; }
+  render(
+    <Provider store={store}>
+      <Highlights {...props} />
+    </Provider>,
+    elm
+  );
+};
+
+const root = document.querySelector('#root');
+if (root) {
+  window.loadHighlights('#root', {tag: 'Em Alta'});
+}

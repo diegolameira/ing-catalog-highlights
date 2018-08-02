@@ -189,6 +189,14 @@ Mobile Only
     z-index: 3;
     position: relative;
     margin-bottom: -15px; }
+  @media (min-width: 768px) {
+    .ing-carousel {
+      padding-bottom: 60px; }
+    .ing-carousel .swiper-container::before, .ing-carousel .swiper-container::after {
+      bottom: 50px !important; }
+    .ing-carousel .swiper-container {
+      margin-bottom: -45px;
+      padding-bottom: 30px; } }
   .ing-carousel .swiper-container::before,
   .ing-carousel .swiper-container::after {
     content: "";
@@ -207,6 +215,12 @@ Mobile Only
   .ing-carousel .swiper-button-prev,
   .ing-carousel .swiper-button-next {
     display: none; }
+  @media (min-width: 768px) {
+    .ing-carousel .swiper-button-prev,
+    .ing-carousel .swiper-button-next {
+      display: block;
+      padding: 60px 25px;
+      margin-top: 10px; } }
   @media (min-width: 425px) {
     .ing-carousel:not(.mobile-only) .ing-carouselItem[class*="swiper-slide-active"] .ing-carouselItem__inner {
       transform: scale(1.15); } }
@@ -216,11 +230,6 @@ Mobile Only
       max-width: 240px; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__link {
       display: block; }
-    .ing-carousel:not(.mobile-only) .swiper-button-prev,
-    .ing-carousel:not(.mobile-only) .swiper-button-next {
-      display: block;
-      padding: 60px 25px;
-      margin-top: 10px; }
     .ing-carousel:not(.mobile-only) .ing-carouselItem.swiper-slide-prev {
       transition: opacity ease-in-out 0.3s; }
     .ing-carousel:not(.mobile-only) .ing-carouselItem {

@@ -39,7 +39,7 @@ export default class Carousel extends React.Component<CarouselProps> {
     },
     breakpoints: {
       2560: {
-        // slidesPerView: 13
+        slidesPerView: 11
       },
       1200: {
         slidesPerView: 9

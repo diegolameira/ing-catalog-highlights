@@ -167,13 +167,18 @@ Carousel Item
   padding-right: 30px;
   margin: 10px; }
 
-.ing-carouselItemRating {
+.ing-carouselItemRating.tag,
+.ing-carouselItemRating.tag-no-classification::before {
   position: absolute;
   right: 0;
   bottom: 0;
   margin: 10px;
   box-sizing: border-box;
   z-index: 2; }
+
+.ing-carouselItemRating.tag-no-classification {
+  margin: 0;
+  font-size: 0; }
 
 .ing-carousel {
   /*==============================================

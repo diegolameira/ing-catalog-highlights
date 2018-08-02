@@ -17,7 +17,17 @@ class Background extends React.Component<Props> {
           {
             items
               .map(getMovieBackground)
-              .map((url, key) => <img key={key} src={url} />)[current]
+              .map((src: string, idx: number) => {
+                let prev = (current - idx) % items.length;
+                if ( prev < 0 ) {
+                  prev = items.length - Math.abs(prev);
+                }
+                return ({
+                  src: current === idx || ((current + idx) % items.length) - 1 || prev ? src : '',
+                  ['data-active']: current === idx,
+                });
+              })
+              .map((props, key) => <img key={key} {...props} />)
           }
         </div>
       </div>

@@ -43,12 +43,20 @@ Carousel Background
   overflow: hidden;
 
   img {
-    position: relative;
+    z-index: -1;
+    position: absolute;
+    top: 0;
     /* expand the container padding */
     min-width: calc(100% + 20px);
     left: -10px;
-    opacity: 0.4;
+    opacity: 0;
     filter: blur(4px);
+    transition: opacity .6s ease-in-out;
+  }
+
+  img[data-active="true"] {
+    z-index: 0;
+    opacity: 0.4;
   }
 
   @media (max-width: 768px) {
@@ -56,8 +64,11 @@ Carousel Background
   }
 
   @media (min-width: 768px) {
-    img {
+    img[data-active="true"] {
       opacity: 0.6;
+    }
+
+    img {
       filter: none;
     }
 

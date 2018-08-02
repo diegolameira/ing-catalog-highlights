@@ -35,18 +35,25 @@ Carousel Background
   width: 100%;
   overflow: hidden; }
   .ing-carouselBackground img {
-    position: relative;
+    z-index: -1;
+    position: absolute;
+    top: 0;
     /* expand the container padding */
     min-width: calc(100% + 20px);
     left: -10px;
-    opacity: 0.4;
-    filter: blur(4px); }
+    opacity: 0;
+    filter: blur(4px);
+    transition: opacity .6s ease-in-out; }
+  .ing-carouselBackground img[data-active="true"] {
+    z-index: 0;
+    opacity: 0.4; }
   @media (max-width: 768px) {
     .ing-carouselBackground {
       max-width: 100%; } }
   @media (min-width: 768px) {
+    .ing-carouselBackground img[data-active="true"] {
+      opacity: 0.6; }
     .ing-carouselBackground img {
-      opacity: 0.6;
       filter: none; }
     .ing-carouselBackground::after {
       content: "";

@@ -19,6 +19,17 @@ Carousel
     width: 100%;
     height: 100%;
   }
+
+  min-height: 328px;
+  @media (min-width: 768px) {
+    min-height: 433px;
+  }
+  @media (min-width: 1024px) {
+    min-height: 421px;
+  }
+  @media (min-width: 1440px) {
+    min-height: 508px;
+  }
 }
 
 .ing-carousel__inner {
@@ -93,6 +104,13 @@ Carousel Background
 
 .ing-carouselBackground__inner {
   height: 100%;
+
+  &:empty {
+    opacity: .5;
+    background: center center no-repeat url('//ingresso-a.akamaihd.net/catalog/Content/img/placeholder-movie-image-13223897b1.jpg');
+    background-size: cover;
+  }
+
 
   @media (min-width: 768px) {
     &::before {
@@ -218,14 +236,14 @@ Carousel Item
 }
 
 .ing-carouselItem__title__inner {
-  font-size: 13px;
+  font-size: 11px;
   line-height: 1.13em;
   font-family: Klavika-Regular;
-  font-weight: 500;
+  font-weight: 600;
   position: absolute;
   left: 0;
   bottom: 0;
-  padding-right: 30px;
+  // padding-right: 30px;
   margin: 10px;
 }
 
@@ -292,6 +310,7 @@ Carousel Item
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
+    background-position-y: 70%;
   }
 
 

@@ -7,13 +7,12 @@ function make(): Movie[] {
     id: '',
     title: '',
     siteURL: '',
-    images: []
   }));
 }
 
 export default class Carousel extends React.Component<CarouselProps> {
   static defaultProps: CarouselProps = {
-    items: make()
+    items: []
   };
   swiper: Swiper;
   settings = {
@@ -39,12 +38,9 @@ export default class Carousel extends React.Component<CarouselProps> {
     },
     breakpoints: {
       2560: {
-        slidesPerView: 11
-      },
-      1200: {
         slidesPerView: 9
       },
-      1024: {
+      1440: {
         slidesPerView: 7
       },
       768: {
@@ -71,7 +67,8 @@ export default class Carousel extends React.Component<CarouselProps> {
     super(props);
   }
   render() {
-    const items = this.props.items.map((movie, idx) => (
+    const array = this.props.items.length ? this.props.items : make();
+    const items = array.map((movie, idx) => (
       <CarouselItem
         key={idx}
         movie={movie}
@@ -84,12 +81,16 @@ export default class Carousel extends React.Component<CarouselProps> {
       />
     ));
     return (
-      <Slider
-        ref={(node: {swiper: Swiper}) => (node ? (this.swiper = node.swiper) : null)}
-        {...this.settings}
+      <div
+        className="swiper-ingresso"
       >
-        {items}
-      </Slider>
+        <Slider
+          ref={(node: {swiper: Swiper}) => (node ? (this.swiper = node.swiper) : null)}
+          {...this.settings}
+        >
+          {items}
+        </Slider>
+      </div>
     );
   }
 }

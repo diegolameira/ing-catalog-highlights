@@ -6,6 +6,7 @@ export default ({ movie, onClick }: CarouselItemProps) => (
   <div className="swiper-slide ing-carouselItem">
     <div className="ing-carouselItem__inner">
       <a
+        href={movie.siteURL}
         className="ing-carouselItem__link"
         onClick={() => onClick && onClick()}
       >

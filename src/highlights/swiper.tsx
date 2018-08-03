@@ -24,34 +24,34 @@ export default class Carousel extends React.Component<CarouselProps> {
     loop: true,
     lazy: true,
     autoHeight: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: true
-    },
     centeredSlides: true,
     initialSlide: 0,
     slidesPerView: 9,
     spaceBetween: 20,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
     breakpoints: {
       2560: {
-        slidesPerView: 9
+        slidesPerView: 9,
       },
       1440: {
-        slidesPerView: 7
+        slidesPerView: 7,
       },
       768: {
         initialSlide: 2,
         slidesPerView: 5,
-        spaceBetween: 20
       },
       425: {
+        autoplay: false,
         initialSlide: 1,
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 30,
       }
     },
     on: {

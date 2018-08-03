@@ -159,7 +159,7 @@ Carousel Item
   overflow: hidden;
   transform: scale(0.95); }
   .ing-carouselItem[class*="swiper-slide-active"] .ing-carouselItem__inner {
-    transform: scale(1.28);
+    transform: scale(1.28) translateY(2.5%);
     box-shadow: rgba(0, 0, 0, 0.2) 2px 6px 10px; }
 
 .ing-carouselItem__title {
@@ -185,7 +185,8 @@ Carousel Item
   position: absolute;
   left: 0;
   bottom: 0;
-  margin: 10px; }
+  margin: 10px;
+  color: #fff; }
 
 .ing-carouselItemRating.tag,
 .ing-carouselItemRating.tag-no-classification::before {
@@ -208,15 +209,18 @@ Mobile Only
     padding-top: 143px;
     z-index: 3;
     position: relative;
-    margin-bottom: -15px; }
+    margin-bottom: -45px;
+    padding-bottom: 30px; }
+    .ing-carousel .swiper-container::before, .ing-carousel .swiper-container::after {
+      bottom: 50px; }
   @media (min-width: 768px) {
     .ing-carousel {
       padding-bottom: 60px; }
     .ing-carousel .swiper-container::before, .ing-carousel .swiper-container::after {
-      bottom: 50px !important; }
+      bottom: 50px; }
     .ing-carousel .swiper-container {
       margin-bottom: -45px;
-      padding-bottom: 30px; } }
+      padding-bottom: 40px; } }
   .ing-carousel .swiper-container::before,
   .ing-carousel .swiper-container::after {
     content: "";
@@ -224,7 +228,6 @@ Mobile Only
     height: 390px;
     width: 115px;
     right: 0px;
-    bottom: 20px;
     z-index: 2;
     pointer-events: none;
     background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 100%); }
@@ -244,8 +247,11 @@ Mobile Only
       margin-top: 10px; } }
   @media (min-width: 425px) {
     .ing-carousel:not(.mobile-only) .ing-carouselItem[class*="swiper-slide-active"] .ing-carouselItem__inner {
-      transform: scale(1.15); } }
+      transform: scale(1.25) translateY(2.5%); } }
   @media (min-width: 768px) {
+    .ing-carousel:not(.mobile-only) .ing-carouselBackground__inner::before {
+      width: 80%;
+      background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 80%); }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription {
       bottom: 0;
       max-width: 240px; }
@@ -261,7 +267,7 @@ Mobile Only
       pointer-events: all; }
     .ing-carousel:not(.mobile-only) .ing-carouselItem[class*="swiper-slide-active"]
 > .ing-carouselItem__inner {
-      transform: scale(1.15) translateX(-6.5%); }
+      transform: scale(1.15) translateX(-6.5%) translateY(2.5%); }
     .ing-carousel:not(.mobile-only) .ing-carouselItem__title {
       display: none; } }
   @media (min-width: 1024px) {
@@ -274,12 +280,12 @@ mobile and mobileOnly items margin compensation
 ==============================================*/
 @media (min-width: 426px) and (max-width: 767px) {
   :not(.swiper-slide-active) > .ing-carouselItem__inner {
-    transform: translateX(-15%); }
+    transform: scale(0.95) translateX(-15%); }
   .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
     transform: translateX(15%); } }
 
 @media (min-width: 768px) {
   .ing-carousel.mobile-only :not(.swiper-slide-active) > .ing-carouselItem__inner {
-    transform: translateX(-10%); }
+    transform: scale(0.95) translateX(-10%); }
   .ing-carousel.mobile-only .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
     transform: translateX(10%); } }

@@ -211,7 +211,7 @@ Carousel Item
   transform: scale(0.95);
 
   .ing-carouselItem[class*="swiper-slide-active"] & {
-    transform: scale(1.28);
+    transform: scale(1.28) translateY(2.5%);
     box-shadow: rgba(0, 0, 0, 0.2) 2px 6px 10px;
   }
 }
@@ -245,6 +245,7 @@ Carousel Item
   bottom: 0;
   // padding-right: 30px;
   margin: 10px;
+  color: #fff;
 }
 
 .ing-carouselItemRating.tag,
@@ -267,7 +268,12 @@ Carousel Item
     padding-top: 143px;
     z-index: 3;
     position: relative;
-    margin-bottom: -15px;
+    margin-bottom: -45px;
+    padding-bottom: 30px;
+
+    &::before, &::after {
+      bottom: 50px;
+    }
   }
 
   // NEEDFIX
@@ -278,13 +284,13 @@ Carousel Item
 
     .swiper-container {
       &::before, &::after {
-        bottom: 50px!important;
+        bottom: 50px;
       }
     }
 
     .swiper-container {
       margin-bottom: -45px;
-      padding-bottom: 30px;
+      padding-bottom: 40px;
     }
   }
 
@@ -295,7 +301,7 @@ Carousel Item
     height: 390px;
     width: 115px;
     right: 0px;
-    bottom: 20px;
+    // bottom: 20px;
     z-index: 2;
     pointer-events: none;
     background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 100%);
@@ -330,11 +336,16 @@ Mobile Only
   &:not(.mobile-only) {
     @media (min-width: 425px) {
       .ing-carouselItem[class*="swiper-slide-active"] .ing-carouselItem__inner {
-        transform: scale(1.15);
+        transform: scale(1.25) translateY(2.5%);
       }
     }
 
     @media (min-width: 768px) {
+      .ing-carouselBackground__inner::before {
+        width: 80%;
+        background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 80%);
+      }
+
       .ing-carouselDescription {
         bottom: 0;
         max-width: 240px;
@@ -360,7 +371,7 @@ Mobile Only
 
       .ing-carouselItem[class*="swiper-slide-active"]
         > .ing-carouselItem__inner {
-        transform: scale(1.15) translateX(-6.5%);
+        transform: scale(1.15) translateX(-6.5%) translateY(2.5%);
       }
 
       .ing-carouselItem__title {
@@ -384,7 +395,7 @@ mobile and mobileOnly items margin compensation
 
 @media (min-width: 426px) and (max-width: 767px) {
   :not(.swiper-slide-active) > .ing-carouselItem__inner {
-    transform: translateX(-15%);
+    transform: scale(0.95) translateX(-15%);
   }
 
   .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
@@ -396,7 +407,7 @@ mobile and mobileOnly items margin compensation
 
   .ing-carousel.mobile-only {
     :not(.swiper-slide-active) > .ing-carouselItem__inner {
-      transform: translateX(-10%);
+      transform: scale(0.95) translateX(-10%);
     }
 
     .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {

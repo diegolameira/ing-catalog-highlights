@@ -21,12 +21,12 @@ Carousel
   }
 
   min-height: 328px;
-  @media (min-width: 768px) {
-    min-height: 433px;
-  }
-  @media (min-width: 1024px) {
-    min-height: 421px;
-  }
+  // @media (min-width: 768px) {
+  //   min-height: 433px;
+  // }
+  // @media (min-width: 1024px) {
+  //   min-height: 421px;
+  // }
   @media (min-width: 1440px) {
     min-height: 508px;
   }
@@ -76,7 +76,7 @@ Carousel Background
 
   @media (min-width: 768px) {
     img[data-active="true"] {
-      opacity: 0.6;
+      opacity: 1;
     }
 
     img {
@@ -190,6 +190,10 @@ Carousel Description
   font-family: Klavika-Bold;
 }
 
+.ing-carouselDescription__tags {
+  display: none;
+}
+
 .ing-carouselDescription__tagItem {
   margin: 0 10px 5px 0;
 }
@@ -279,7 +283,7 @@ Carousel Item
   // NEEDFIX
   @media (min-width: 768px) {
     & {
-      padding-bottom: 60px;
+      padding-bottom: 28px;
     }
 
     .swiper-container {
@@ -316,7 +320,7 @@ Carousel Item
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
-    background-position-y: 70%;
+    background-position-y: 60%;
   }
 
 
@@ -352,6 +356,9 @@ Mobile Only
       }
 
       .ing-carouselDescription__link {
+        display: block;
+      }
+      .ing-carouselDescription__tags {
         display: block;
       }
 

@@ -19,24 +19,24 @@ class Descriptor extends React.Component<Props> {
               <h1 className="ing-carouselDescription__title line-clamp-2">
                 {currentItem.title}
               </h1>
-              <div className="ing-carouselDescription__tags">
-                {currentItem.tags &&
-                  currentItem.tags.filter(t => t !== this.props.tag).map((tag, key) => (
-                    <span
-                      className={`ing-carouselDescription__tagItem tag tag-category-${slugify(tag, { lower: true })}`}
-                      key={key}
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                {currentItem.genres &&
-                  currentItem.genres.map((tag, key) => (
-                    <span className="ing-carouselDescription__tagItem tag tag-genre" key={key}>
-                      {tag}
-                    </span>
-                  ))}
-              </div>
             </a>
+            <div className="ing-carouselDescription__tags">
+              {currentItem.tags &&
+                currentItem.tags.filter(t => t !== this.props.tag).map((tag, key) => (
+                  <span
+                    className={`ing-carouselDescription__tagItem tag tag-category-${slugify(tag, { lower: true })}`}
+                    key={key}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              {currentItem.genres &&
+                currentItem.genres.map((tag, key) => (
+                  <span className="ing-carouselDescription__tagItem tag tag-genre" key={key}>
+                    {tag}
+                  </span>
+                ))}
+            </div>
           </div>
         </div>
       )

@@ -27,7 +27,7 @@ export default class Carousel extends React.Component<CarouselProps> {
     centeredSlides: true,
     initialSlide: 0,
     slidesPerView: 9,
-    spaceBetween: 20,
+    spaceBetween: 15,
     autoplay: {
       delay: 4000,
       disableOnInteraction: true
@@ -51,7 +51,7 @@ export default class Carousel extends React.Component<CarouselProps> {
         autoplay: false,
         initialSlide: 1,
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 25,
       }
     },
     on: {

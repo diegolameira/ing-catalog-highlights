@@ -132,6 +132,15 @@ Carousel Description
   display: none;
   cursor: pointer; }
 
+.ing-carouselDescription__titleWrapper {
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  opacity: 0;
+  transition: opacity .6s ease-in-out; }
+  .ing-carouselDescription__titleWrapper[data-active="true"] {
+    opacity: 1; }
+
 .ing-carouselDescription__title {
   font-size: 24px;
   font-family: Klavika-Bold; }
@@ -252,6 +261,9 @@ Mobile Only
     .ing-carousel:not(.mobile-only) .ing-carouselDescription {
       bottom: 0;
       max-width: 240px; }
+    .ing-carousel:not(.mobile-only) .ing-carouselDescription__tagTitle {
+      position: absolute;
+      top: 0; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__link {
       display: block; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__tags {
@@ -271,7 +283,9 @@ Mobile Only
       display: none; } }
   @media (min-width: 1024px) {
     .ing-carousel:not(.mobile-only) .ing-carouselDescription {
-      max-width: 320px; } }
+      max-width: 320px; }
+    .ing-carousel:not(.mobile-only) .ing-carouselDescription__titleWrapper {
+      width: 320px; } }
 
 /*==============================================
 NEED FIX

@@ -9,34 +9,54 @@ class Descriptor extends React.Component<Props> {
 
   render() {
     const { items = [], current = 0, onClick } = this.props;
-    const currentItem = items[current] || {};
     return (
       items.length && (
         <div className="container">
           <div className="ing-carouselDescription">
-            <span className="ing-carouselDescription__tagTitle">{this.props.tag}</span>
-            <a className="ing-carouselDescription__link" onClick={() => onClick && onClick(currentItem, current)}>
-              <h1 className="ing-carouselDescription__title line-clamp-2">
-                {currentItem.title}
-              </h1>
-            </a>
-            <div className="ing-carouselDescription__tags">
-              {currentItem.tags &&
-                currentItem.tags.filter(t => t !== this.props.tag).map((tag, key) => (
-                  <span
-                    className={`ing-carouselDescription__tagItem tag tag-category-${slugify(tag, { lower: true })}`}
-                    key={key}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              {currentItem.genres &&
-                currentItem.genres.map((tag, key) => (
-                  <span className="ing-carouselDescription__tagItem tag tag-genre" key={key}>
-                    {tag}
-                  </span>
-                ))}
-            </div>
+            <span className="ing-carouselDescription__tagTitle">
+              {this.props.tag}
+            </span>
+            {items.map((item: Movie, idx: number) => (
+              <div
+                className="ing-carouselDescription__titleWrapper"
+                key={`title-${idx}`}
+                data-active={items.indexOf(item) === current}
+              >
+                <a
+                  className="ing-carouselDescription__link"
+                  onClick={() => onClick && onClick(item, current)}
+                >
+                  <h1 className="ing-carouselDescription__title line-clamp-2">
+                    {item.title}
+                  </h1>
+                </a>
+                <div className="ing-carouselDescription__tags">
+                  {item.tags &&
+                    item.tags
+                      .filter(t => t !== this.props.tag)
+                      .map((tag, key) => (
+                        <span
+                          className={`ing-carouselDescription__tagItem tag tag-category-${slugify(
+                            tag,
+                            { lower: true },
+                          )}`}
+                          key={key}
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                  {item.genres &&
+                    item.genres.map((tag, key) => (
+                      <span
+                        className="ing-carouselDescription__tagItem tag tag-genre"
+                        key={key}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       )
@@ -45,7 +65,7 @@ class Descriptor extends React.Component<Props> {
 }
 
 const mapStateToProps = state => ({
-  current: state.current
+  current: state.current,
 });
 
 export default connect<{}, {}, Props>(mapStateToProps)(Descriptor);

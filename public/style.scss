@@ -185,6 +185,18 @@ Carousel Description
   cursor: pointer;
 }
 
+.ing-carouselDescription__titleWrapper {
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  opacity: 0;
+  transition: opacity .6s ease-in-out;
+
+  &[data-active="true"] {
+    opacity: 1;
+  }
+}
+
 .ing-carouselDescription__title {
   font-size: 24px;
   font-family: Klavika-Bold;
@@ -355,6 +367,11 @@ Mobile Only
         max-width: 240px;
       }
 
+      .ing-carouselDescription__tagTitle {
+        position: absolute;
+        top: 0;
+      }
+
       .ing-carouselDescription__link {
         display: block;
       }
@@ -389,6 +406,10 @@ Mobile Only
     @media (min-width: 1024px) {
       .ing-carouselDescription {
         max-width: 320px;
+      }
+
+      .ing-carouselDescription__titleWrapper {
+        width: 320px;
       }
     }
   }

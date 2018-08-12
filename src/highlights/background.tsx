@@ -14,21 +14,26 @@ class Background extends React.Component<Props> {
     return (
       <div className="ing-carouselBackground container">
         <div className="ing-carouselBackground__inner">
-          {
-            items
-              .map(getMovieBackground)
-              .map((src: string, idx: number) => {
-                let prev = (current - idx) % items.length;
-                if ( prev < 0 ) {
-                  prev = items.length - Math.abs(prev);
-                }
-                return ({
-                  src: current === idx || ((current + idx) % items.length) - 1 || prev ? src : '',
-                  ['data-active']: current === idx,
-                });
-              })
-              .map((props, key) => <img key={key} {...props} />)
-          }
+          {items
+            .map(getMovieBackground)
+            .map((src: string, idx: number) => {
+              let prev = (current - idx) % items.length;
+              if (prev < 0) {
+                prev = items.length - Math.abs(prev);
+              }
+              return {
+                src:
+                  current === idx ||
+                  ((current + idx) % items.length) - 1 ||
+                  prev
+                    ? src
+                    : '',
+                ['data-active']: current === idx,
+              };
+            })
+            .map((props, key) => (
+              <a key={key} onClick={() => alert('aaa')}><img {...props} /></a>
+            ))}
         </div>
       </div>
     );

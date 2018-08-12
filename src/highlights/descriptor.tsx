@@ -12,52 +12,53 @@ class Descriptor extends React.Component<Props> {
     return (
       items.length && (
         <div className="container">
-          <div className="ing-carouselDescription">
-            <span className="ing-carouselDescription__tagTitle">
-              {this.props.tag}
-            </span>
-            {items.map((item: Movie, idx: number) => (
-              <div
-                className="ing-carouselDescription__titleWrapper"
-                key={`title-${idx}`}
-                data-active={items.indexOf(item) === current}
-              >
-                <a
-                  className="ing-carouselDescription__link"
-                  onClick={() => onClick && onClick(item, current)}
+          <a
+            className="ing-carouselDescription__link"
+            onClick={() => onClick && onClick(items[current], current)}
+          >
+            <div className="ing-carouselDescription">
+              <span className="ing-carouselDescription__tagTitle">
+                {this.props.tag}
+              </span>
+              {items.map((item: Movie, idx: number) => (
+                <div
+                  className="ing-carouselDescription__titleWrapper"
+                  key={`title-${idx}`}
+                  data-active={items.indexOf(item) === current}
                 >
                   <h1 className="ing-carouselDescription__title line-clamp-2">
                     {item.title}
                   </h1>
-                </a>
-                <div className="ing-carouselDescription__tags">
-                  {item.tags &&
-                    item.tags
-                      .filter(t => t !== this.props.tag)
-                      .map((tag, key) => (
+
+                  <div className="ing-carouselDescription__tags">
+                    {item.tags &&
+                      item.tags
+                        .filter(t => t !== this.props.tag)
+                        .map((tag, key) => (
+                          <span
+                            className={`ing-carouselDescription__tagItem tag tag-category-${slugify(
+                              tag,
+                              { lower: true },
+                            )}`}
+                            key={key}
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                    {item.genres &&
+                      item.genres.map((tag, key) => (
                         <span
-                          className={`ing-carouselDescription__tagItem tag tag-category-${slugify(
-                            tag,
-                            { lower: true },
-                          )}`}
+                          className="ing-carouselDescription__tagItem tag tag-genre"
                           key={key}
                         >
                           {tag}
                         </span>
                       ))}
-                  {item.genres &&
-                    item.genres.map((tag, key) => (
-                      <span
-                        className="ing-carouselDescription__tagItem tag tag-genre"
-                        key={key}
-                      >
-                        {tag}
-                      </span>
-                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </a>
         </div>
       )
     );

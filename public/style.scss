@@ -1,6 +1,8 @@
 .line-clamp-2 {
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
+  box-orient: vertical;
   -webkit-box-orient: vertical;
   overflow: hidden;
   max-height: 2em;
@@ -20,22 +22,28 @@ Carousel
     height: 100%;
   }
 
-  min-height: 328px;
+  a {
+    display: block;
+  }
+
+  // min-height: 328px;
+  height: 365px;
   // @media (min-width: 768px) {
   //   min-height: 433px;
   // }
-  // @media (min-width: 1024px) {
-  //   min-height: 421px;
-  // }
-  @media (min-width: 1440px) {
-    min-height: 508px;
+  @media (min-width: 1024px) {
+    height: 438px;
   }
+  // @media (min-width: 1440px) {
+  //   min-height: 508px;
+  // }
 }
 
 .ing-carousel__inner {
   position: relative;
   background: #212121;
   border-bottom: 3px solid rgb(255, 115, 0);
+  height: 100%;
 }
 
 /*==============================================
@@ -75,14 +83,6 @@ Carousel Background
   }
 
   @media (min-width: 768px) {
-    img[data-active="true"] {
-      opacity: 1;
-    }
-
-    img {
-      filter: none;
-    }
-
     &::after {
       content: "";
       display: block;
@@ -157,10 +157,6 @@ Carousel Description
   padding: 10px;
   padding-top: 120px;
   z-index: 4;
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-    padding-left: 50px;
-  }
 }
 
 .ing-carouselDescription__tagTitle {
@@ -181,11 +177,12 @@ Carousel Description
 }
 
 .ing-carouselDescription__link {
-  display: none;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .ing-carouselDescription__titleWrapper {
+  display: none;
   position: absolute;
   top: 30px;
   width: 200px;
@@ -198,12 +195,8 @@ Carousel Description
 }
 
 .ing-carouselDescription__title {
-  font-size: 24px;
+  font-size: 20px;
   font-family: Klavika-Bold;
-}
-
-.ing-carouselDescription__tags {
-  display: none;
 }
 
 .ing-carouselDescription__tagItem {
@@ -240,8 +233,8 @@ Carousel Item
   height: 50%;
   padding: 10px;
   z-index: 2;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 48%, #000000);
   overflow: hidden;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
 
   transition: all ease-out 0.3s;
   transform: translateY(100%);
@@ -310,33 +303,35 @@ Carousel Item
     }
   }
 
-  .swiper-container::before,
-  .swiper-container::after {
-    content: "";
-    position: absolute;
-    height: 390px;
-    width: 115px;
-    right: 0px;
-    // bottom: 20px;
-    z-index: 2;
-    pointer-events: none;
-    background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 100%);
-  }
-
-  .swiper-container::before {
-    left: 0px;
-    right: auto;
-    background: linear-gradient(to left, rgba(33, 33, 33, 0) 0, #212121 100%);
-  }
-
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
-    background-position-y: 60%;
+    background-position-y: 64%;
   }
 
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
+    .swiper-container {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        height: 390px;
+        width: 115px;
+        right: 0px;
+        // bottom: 20px;
+        z-index: 2;
+        pointer-events: none;
+        background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 100%);
+      }
+
+      &::before {
+        left: 0px;
+        right: auto;
+        background: linear-gradient(to left, rgba(33, 33, 33, 0) 0, #212121 100%);
+      }
+    }
+
     .swiper-button-prev,
     .swiper-button-next {
       display: block;
@@ -357,9 +352,23 @@ Mobile Only
     }
 
     @media (min-width: 768px) {
+      .ing-carouselBackground {
+        img {
+          filter: none;
+
+          &[data-active="true"] {
+            opacity: 1;
+          }
+        }
+      }
+
       .ing-carouselBackground__inner::before {
         width: 80%;
         background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 80%);
+      }
+
+      .ing-carouselDescription__titleWrapper {
+        display: block;
       }
 
       .ing-carouselDescription {
@@ -373,10 +382,7 @@ Mobile Only
       }
 
       .ing-carouselDescription__link {
-        display: block;
-      }
-      .ing-carouselDescription__tags {
-        display: block;
+        pointer-events: initial;
       }
 
       .ing-carouselItem.swiper-slide-prev {
@@ -410,6 +416,10 @@ Mobile Only
 
       .ing-carouselDescription__titleWrapper {
         width: 320px;
+      }
+
+      .ing-carouselDescription__title {
+        font-size: 24px;
       }
     }
   }

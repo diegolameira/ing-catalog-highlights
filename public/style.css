@@ -1,6 +1,8 @@
 .line-clamp-2 {
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
+  box-orient: vertical;
   -webkit-box-orient: vertical;
   overflow: hidden;
   max-height: 2em; }
@@ -11,19 +13,22 @@ Carousel
 .ing-carousel {
   overflow: hidden;
   padding-bottom: 30px;
-  min-height: 328px; }
+  height: 365px; }
   .ing-carousel img {
     object-fit: cover;
     width: 100%;
     height: 100%; }
-  @media (min-width: 1440px) {
+  .ing-carousel a {
+    display: block; }
+  @media (min-width: 1024px) {
     .ing-carousel {
-      min-height: 508px; } }
+      height: 438px; } }
 
 .ing-carousel__inner {
   position: relative;
   background: #212121;
-  border-bottom: 3px solid #ff7300; }
+  border-bottom: 3px solid #ff7300;
+  height: 100%; }
 
 /*==============================================
 Carousel Background
@@ -55,10 +60,6 @@ Carousel Background
     .ing-carouselBackground {
       max-width: 100%; } }
   @media (min-width: 768px) {
-    .ing-carouselBackground img[data-active="true"] {
-      opacity: 1; }
-    .ing-carouselBackground img {
-      filter: none; }
     .ing-carouselBackground::after {
       content: "";
       display: block;
@@ -108,9 +109,6 @@ Carousel Description
   padding: 10px;
   padding-top: 120px;
   z-index: 4; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .ing-carouselDescription {
-      padding-left: 50px; } }
 
 .ing-carouselDescription__tagTitle {
   display: block;
@@ -129,10 +127,11 @@ Carousel Description
   text-transform: uppercase; }
 
 .ing-carouselDescription__link {
-  display: none;
-  cursor: pointer; }
+  cursor: pointer;
+  pointer-events: none; }
 
 .ing-carouselDescription__titleWrapper {
+  display: none;
   position: absolute;
   top: 30px;
   width: 200px;
@@ -142,11 +141,8 @@ Carousel Description
     opacity: 1; }
 
 .ing-carouselDescription__title {
-  font-size: 24px;
+  font-size: 20px;
   font-family: Klavika-Bold; }
-
-.ing-carouselDescription__tags {
-  display: none; }
 
 .ing-carouselDescription__tagItem {
   margin: 0 10px 5px 0; }
@@ -176,8 +172,8 @@ Carousel Item
   height: 50%;
   padding: 10px;
   z-index: 2;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 48%, #000000);
   overflow: hidden;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
   transition: all ease-out 0.3s;
   transform: translateY(100%); }
   .ing-carouselItem[class*="swiper-slide-active"] .ing-carouselItem__title {
@@ -227,25 +223,24 @@ Mobile Only
     .ing-carousel .swiper-container {
       margin-bottom: -45px;
       padding-bottom: 40px; } }
-  .ing-carousel .swiper-container::before,
-  .ing-carousel .swiper-container::after {
-    content: "";
-    position: absolute;
-    height: 390px;
-    width: 115px;
-    right: 0px;
-    z-index: 2;
-    pointer-events: none;
-    background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 100%); }
-  .ing-carousel .swiper-container::before {
-    left: 0px;
-    right: auto;
-    background: linear-gradient(to left, rgba(33, 33, 33, 0) 0, #212121 100%); }
   .ing-carousel .swiper-button-prev,
   .ing-carousel .swiper-button-next {
     display: none;
-    background-position-y: 60%; }
-  @media (min-width: 768px) {
+    background-position-y: 64%; }
+  @media (min-width: 1024px) {
+    .ing-carousel .swiper-container::before, .ing-carousel .swiper-container::after {
+      content: "";
+      position: absolute;
+      height: 390px;
+      width: 115px;
+      right: 0px;
+      z-index: 2;
+      pointer-events: none;
+      background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 100%); }
+    .ing-carousel .swiper-container::before {
+      left: 0px;
+      right: auto;
+      background: linear-gradient(to left, rgba(33, 33, 33, 0) 0, #212121 100%); }
     .ing-carousel .swiper-button-prev,
     .ing-carousel .swiper-button-next {
       display: block;
@@ -255,9 +250,15 @@ Mobile Only
     .ing-carousel:not(.mobile-only) .ing-carouselItem[class*="swiper-slide-active"] .ing-carouselItem__inner {
       transform: scale(1.25) translateY(2.5%); } }
   @media (min-width: 768px) {
+    .ing-carousel:not(.mobile-only) .ing-carouselBackground img {
+      filter: none; }
+      .ing-carousel:not(.mobile-only) .ing-carouselBackground img[data-active="true"] {
+        opacity: 1; }
     .ing-carousel:not(.mobile-only) .ing-carouselBackground__inner::before {
       width: 80%;
       background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 80%); }
+    .ing-carousel:not(.mobile-only) .ing-carouselDescription__titleWrapper {
+      display: block; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription {
       bottom: 0;
       max-width: 240px; }
@@ -265,9 +266,7 @@ Mobile Only
       position: absolute;
       top: 0; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__link {
-      display: block; }
-    .ing-carousel:not(.mobile-only) .ing-carouselDescription__tags {
-      display: block; }
+      pointer-events: initial; }
     .ing-carousel:not(.mobile-only) .ing-carouselItem.swiper-slide-prev {
       transition: opacity ease-in-out 0.3s; }
     .ing-carousel:not(.mobile-only) .ing-carouselItem {
@@ -285,7 +284,9 @@ Mobile Only
     .ing-carousel:not(.mobile-only) .ing-carouselDescription {
       max-width: 320px; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__titleWrapper {
-      width: 320px; } }
+      width: 320px; }
+    .ing-carousel:not(.mobile-only) .ing-carouselDescription__title {
+      font-size: 24px; } }
 
 /*==============================================
 NEED FIX

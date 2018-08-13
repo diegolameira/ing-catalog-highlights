@@ -151,17 +151,21 @@ Carousel Description
 Carousel Item
 ==============================================*/
 .ing-carouselItem {
+  width: 99.5px;
+  height: 146.3px;
   padding: 20px 0;
   cursor: pointer; }
+  .ing-carouselItem.swiper-slide-active {
+    width: 134.3px;
+    height: 197.5px;
+    transform: translateY(-10.5%); }
 
 .ing-carouselItem__inner {
   position: relative;
   transition: all ease-in-out 0.3s;
   box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 10px;
-  overflow: hidden;
-  transform: scale(0.95); }
+  overflow: hidden; }
   .ing-carouselItem[class*="swiper-slide-active"] .ing-carouselItem__inner {
-    transform: scale(1.28) translateY(2.5%);
     box-shadow: rgba(0, 0, 0, 0.2) 2px 6px 10px; }
 
 .ing-carouselItem__title {
@@ -208,47 +212,50 @@ Carousel Item
 Mobile Only
 ==============================================*/ }
   .ing-carousel .swiper-container {
-    padding-top: 143px;
+    height: 362px;
+    padding-top: 110px;
     z-index: 3;
     position: relative;
     margin-bottom: -45px;
     padding-bottom: 30px; }
     .ing-carousel .swiper-container::before, .ing-carousel .swiper-container::after {
       bottom: 50px; }
+  .ing-carousel .swiper-wrapper {
+    margin-top: 44px; }
   @media (min-width: 768px) {
     .ing-carousel {
       padding-bottom: 28px; }
     .ing-carousel .swiper-container::before, .ing-carousel .swiper-container::after {
       bottom: 50px; }
     .ing-carousel .swiper-container {
+      height: 374px;
       margin-bottom: -45px;
       padding-bottom: 40px; } }
   .ing-carousel .swiper-button-prev,
   .ing-carousel .swiper-button-next {
     display: none;
-    background-position-y: 64%; }
+    background-position-y: 59%; }
   @media (min-width: 1024px) {
-    .ing-carousel .swiper-container::before, .ing-carousel .swiper-container::after {
-      content: "";
-      position: absolute;
-      height: 390px;
-      width: 115px;
-      right: 0px;
-      z-index: 2;
-      pointer-events: none;
-      background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 100%); }
-    .ing-carousel .swiper-container::before {
-      left: 0px;
-      right: auto;
-      background: linear-gradient(to left, rgba(33, 33, 33, 0) 0, #212121 100%); }
+    .ing-carousel .swiper-container {
+      height: 447px; }
+      .ing-carousel .swiper-container::before, .ing-carousel .swiper-container::after {
+        content: "";
+        position: absolute;
+        height: 390px;
+        width: 115px;
+        right: 0px;
+        z-index: 2;
+        pointer-events: none;
+        background: linear-gradient(to right, rgba(33, 33, 33, 0) 0, #212121 100%); }
+      .ing-carousel .swiper-container::before {
+        left: 0px;
+        right: auto;
+        background: linear-gradient(to left, rgba(33, 33, 33, 0) 0, #212121 100%); }
     .ing-carousel .swiper-button-prev,
     .ing-carousel .swiper-button-next {
       display: block;
       padding: 60px 25px;
       margin-top: 10px; } }
-  @media (min-width: 425px) {
-    .ing-carousel:not(.mobile-only) .ing-carouselItem[class*="swiper-slide-active"] .ing-carouselItem__inner {
-      transform: scale(1.25) translateY(2.5%); } }
   @media (min-width: 768px) {
     .ing-carousel:not(.mobile-only) .ing-carouselBackground img {
       filter: none; }
@@ -260,6 +267,7 @@ Mobile Only
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__titleWrapper {
       display: block; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription {
+      padding: 120px 0 0;
       bottom: 0;
       max-width: 240px; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__tagTitle {
@@ -277,10 +285,28 @@ Mobile Only
       pointer-events: all; }
     .ing-carousel:not(.mobile-only) .ing-carouselItem[class*="swiper-slide-active"]
 > .ing-carouselItem__inner {
-      transform: scale(1.15) translateX(-6.5%) translateY(2.5%); }
+      overflow: visible; }
+      .ing-carousel:not(.mobile-only) .ing-carouselItem[class*="swiper-slide-active"]
+> .ing-carouselItem__inner > .ing-carouselItem__link::after {
+        content: '';
+        width: 900vh;
+        height: 100vh;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
     .ing-carousel:not(.mobile-only) .ing-carouselItem__title {
       display: none; } }
   @media (min-width: 1024px) {
+    .ing-carousel:not(.mobile-only) .swiper-wrapper {
+      margin-top: 33px; }
+    .ing-carousel:not(.mobile-only) .ing-carouselItem {
+      width: 158px;
+      height: 234px; }
+      .ing-carousel:not(.mobile-only) .ing-carouselItem.swiper-slide-active {
+        width: 200px;
+        height: 292.5px;
+        transform: translateY(-8.5%); }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription {
       max-width: 320px; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__titleWrapper {

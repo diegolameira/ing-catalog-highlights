@@ -26,7 +26,7 @@ export default class Carousel extends React.Component<CarouselProps> {
     autoHeight: false,
     centeredSlides: true,
     initialSlide: 0,
-    slidesPerView: 9,
+    slidesPerView: 'auto',
     spaceBetween: 15,
     autoplay: {
       delay: 4000,
@@ -36,24 +36,24 @@ export default class Carousel extends React.Component<CarouselProps> {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    breakpoints: {
-      2560: {
-        slidesPerView: 9,
-      },
-      1440: {
-        slidesPerView: 7,
-      },
-      768: {
-        initialSlide: 2,
-        slidesPerView: 5,
-      },
-      425: {
-        autoplay: false,
-        initialSlide: 1,
-        slidesPerView: 3,
-        spaceBetween: 25,
-      }
-    },
+    // breakpoints: {
+    //   2560: {
+    //     slidesPerView: 9,
+    //   },
+    //   1440: {
+    //     slidesPerView: 7,
+    //   },
+    //   768: {
+    //     initialSlide: 2,
+    //     slidesPerView: 5,
+    //   },
+    //   425: {
+    //     autoplay: false,
+    //     initialSlide: 1,
+    //     slidesPerView: 3,
+    //     spaceBetween: 25,
+    //   }
+    // },
     on: {
       transitionEnd: () => {
         if (!this.swiper || this.swiper.destroyed) { return; }

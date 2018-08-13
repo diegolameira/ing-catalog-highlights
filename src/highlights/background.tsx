@@ -9,7 +9,7 @@ class Background extends React.Component<Props> {
   }
 
   render() {
-    const { items = [], current = 0 } = this.props;
+    const { items = [], current = 0, onClick } = this.props;
 
     return (
       <div className="ing-carouselBackground container">
@@ -32,7 +32,7 @@ class Background extends React.Component<Props> {
               };
             })
             .map((props, key) => (
-              <a key={key} onClick={() => alert('aaa')}><img {...props} /></a>
+              <a key={key} onClick={() => onClick && onClick(items[current], current)}><img {...props} /></a>
             ))}
         </div>
       </div>
@@ -47,4 +47,5 @@ export default connect<{}, {}, Props>(mapStateToProps)(Background);
 interface Props {
   items: Movie[];
   current?: number;
+  onClick?: (movie: Movie, idx: number) => void;
 }

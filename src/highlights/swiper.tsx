@@ -23,7 +23,7 @@ export default class Carousel extends React.Component<CarouselProps> {
     rebuildOnUpdate: true,
     loop: true,
     lazy: true,
-    autoHeight: true,
+    autoHeight: false,
     centeredSlides: true,
     initialSlide: 0,
     slidesPerView: 9,

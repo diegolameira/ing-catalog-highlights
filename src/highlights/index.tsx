@@ -59,7 +59,16 @@ class Highlights extends React.Component<MainProps, State> {
     return (
       <div className={`ing-carousel ${isMobileOnly ? 'mobile-only' : ''}`}>
         <div className="ing-carousel__inner">
-          <Background items={movies} current={0} />
+          <Background
+            items={movies}
+            current={0}
+            onClick={(movie: Movie, idx: number) => {
+              if (typeof window.trackHighlightsProductClick === 'function') {
+                window.trackHighlightsProductClick('Home - Highlights', movie, idx);
+              }
+              window.location.href = movie.siteURL;
+            }}
+          />
           <Descriptor
             tag={this.props.tag}
             items={movies}

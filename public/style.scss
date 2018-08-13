@@ -274,6 +274,7 @@ Carousel Item
 
 .ing-carousel {
   .swiper-container {
+    height: 362px;
     padding-top: 143px;
     z-index: 3;
     position: relative;
@@ -298,6 +299,7 @@ Carousel Item
     }
 
     .swiper-container {
+      height: 383px;
       margin-bottom: -45px;
       padding-bottom: 40px;
     }
@@ -306,12 +308,14 @@ Carousel Item
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
-    background-position-y: 64%;
+    background-position-y: 58%;
   }
 
 
   @media (min-width: 1024px) {
     .swiper-container {
+      height: 383px;
+
       &::before,
       &::after {
         content: "";
@@ -372,6 +376,7 @@ Mobile Only
       }
 
       .ing-carouselDescription {
+        padding: 120px 0 0;
         bottom: 0;
         max-width: 240px;
       }

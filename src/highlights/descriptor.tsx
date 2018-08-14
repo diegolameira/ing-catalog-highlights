@@ -11,7 +11,7 @@ class Descriptor extends React.Component<Props> {
     const { items = [], current = 0, onClick } = this.props;
     return (
       items.length && (
-        <div className="container">
+        <div className="ing-carouselDescription__wrapper">
           <a
             className="ing-carouselDescription__link"
             onClick={() => onClick && onClick(items[current], current)}

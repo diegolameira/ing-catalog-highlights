@@ -29,7 +29,7 @@
 
 </head>
 
-<body>
+<body class="has-fixed-header home-page">
 
   <header id="header" class="header is-fixed" data-fixed="" itemscope="" itemtype="http://schema.org/WPHeader">
     <div class="hd-top">
@@ -46,10 +46,986 @@
     </div>
   </header>
 
-  <div id="root"></div>
+  <div class="content">
 
-  <div class="container">
-    <h1>Content starts here</h1>
+    <div id="area-1">
+      <div id="root"></div>
+    </div>
+
+    <div class="container dfp-container">
+      <div class="banner-dfp m-b-2 dfp-no-container-margin show-banner">
+        <div class="banner-dfp-wp">
+          <div id="div-gpt-ad-1490046652173-0" class="adSense-home-super1" data-google-query-id="CNnhzOOp7NwCFYkdhwodxmwAhw">
+            <!-- ingresso_home|super1 -->
+            <script type="text/javascript">
+              googletag.cmd.push(function () { googletag.display('div-gpt-ad-1490046652173-0'); });
+            </script>
+            <div id="google_ads_iframe_/40115638/ingweb_home_horizontal_1_0__container__" style="display: inline-block; width: 728px; height: 90px;">
+              <iframe frameborder="0" src="https://tpc.googlesyndication.com/safeframe/1-0-29/html/container.html" id="google_ads_iframe_/40115638/ingweb_home_horizontal_1_0"
+                title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90"
+                data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                style="border: 0px; vertical-align: bottom;" data-gtm-yt-inspected-329664_246="true"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="area-2">
+      <div class="container p-l-0 p-r-0">
+        <!-- Busca -->
+        <div class="row">
+          <div class="col-xs-12">
+            <span class="tit2 m-b-05 d-block hidden-md-down">O que você procura?</span>
+
+
+
+            <div ng-controller="SearchController" search-url="/rio-de-janeiro/home/busca/resultado" selected-url="/rio-de-janeiro/home/filmes/"
+              class="ng-scope">
+              <div class="form-group fl-form-group form-group-btn">
+                <label class="fl-label" for="search-header-top">O que você procura?</label>
+                <div angucomplete-ie8="" id="ex1" placeholder="Pesquise por filmes, cinemas..." maxlength="50" pause="100" selected-object="selectedSearch"
+                  local-data="countries" search-fields="urlKey" title-field="name" minlength="3" remote-url="/busca/autocomplete"
+                  remote-url-data-field="items" input-class="form-control form-control-small" remote-url-response-formatter="searchResponseFormatter"
+                  override-suggestions="true" match-class="highlight" text-searching="false" text-no-results="false" class="ng-isolate-scope">
+                  <div class="angucomplete-holder" ng-class="{'angucomplete-dropdown-visible': showDropdown}">
+                    <input id="ex1_value" name="" ng-class="{'angucomplete-input-not-empty': notEmpty}" ng-model="searchStr" ng-disabled="disableInput"
+                      type="text" placeholder="Pesquise por filmes, cinemas..." maxlength="50" ng-focus="onFocusHandler()"
+                      class="form-control form-control-small ng-empty ng-valid-maxlength" ng-blur="hideResults($event)" autocapitalize="off"
+                      autocorrect="off" autocomplete="off" ng-change="inputChangeHandler(searchStr)">
+                    <div id="ex1_dropdown" class="angucomplete-dropdown ng-hide" ng-show="showDropdown">
+                      <div class="angucomplete-searching ng-binding ng-hide" ng-show="searching" ng-bind="textSearching">false</div>
+                      <div class="angucomplete-searching ng-binding" ng-show="!searching &amp;&amp; (!results || results.length == 0)" ng-bind="textNoResults">false</div>
+                      <!-- ngRepeat: result in results -->
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn-icon" onclick="eventLink(pageName, 'Clicked on search button')">
+                  <svg class="svg-icon" width="25" height="25">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Busca -->
+        <!-- Filtro -->
+        <div id="filter-home-main" class="filters-list o-hidden">
+          <div id="filter" class="hd-mm-filters">
+
+
+
+            <style>
+              .filtered {
+                display: none !important;
+              }
+
+              .filtered-genre {
+                display: none !important;
+              }
+
+              .filtered-movie {
+                display: none !important;
+              }
+
+              .filtered-neighborhood {
+                display: none !important;
+              }
+
+              .filtered-theaters {
+                display: none !important;
+              }
+
+              .filtered-date {
+                display: none !important;
+              }
+            </style>
+
+            <div id="filter-element" class="filter-home-main">
+              <div class="row filter-list-wp">
+                <div role="listbox" class="panel filter col-xs-12">
+                  <span class="filter-head collapsed" data-toggle="collapse" data-parent=".filter-home-main" href="#filter-type-genre-1">
+                    <span class="filter-label">Gênero</span>
+                    <span class="filter-val 1" filter-selected="" id="filter-val-genre-1" type="genre"></span>
+                    <span class="filter-action" onclick="filterController.filterGenerics(event.target, 'genre', '', '', '1')"></span>
+                  </span>
+                  <div class="filter-content collapse fade" id="filter-type-genre-1">
+                    <div class="filter-wp">
+                      <ul id="parameters" class="list-group list-group-nostyle filter-options">
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="21742 20990 21605 20543 20906 19921 20541 21084 21744"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Ação'); filterController.filterGenerics(event.target, 'genre', 'acao', 'Ação', '1')">Ação</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="20973 20532 21754 21743" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Animação'); filterController.filterGenerics(event.target, 'genre', 'animacao', 'Animação', '1')">Animação</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="20532 20543 21705 20541 21084" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Aventura'); filterController.filterGenerics(event.target, 'genre', 'aventura', 'Aventura', '1')">Aventura</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="20973 20313 21736 21332 21290 21335 21553 19921 6044"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Comédia'); filterController.filterGenerics(event.target, 'genre', 'comedia', 'Comédia', '1')">Comédia</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="20255" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Comédia Dramática'); filterController.filterGenerics(event.target, 'genre', 'comedia-dramatica', 'Comédia Dramática', '1')">Comédia Dramática</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="20981" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Comédia Musical'); filterController.filterGenerics(event.target, 'genre', 'comedia-musical', 'Comédia Musical', '1')">Comédia Musical</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="21595 21356" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Comédia Romântica'); filterController.filterGenerics(event.target, 'genre', 'comedia-romantica', 'Comédia Romântica', '1')">Comédia Romântica</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="21453" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Concerto'); filterController.filterGenerics(event.target, 'genre', 'concerto', 'Concerto', '1')">Concerto</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="21753" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Concertos'); filterController.filterGenerics(event.target, 'genre', 'concertos', 'Concertos', '1')">Concertos</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="21709" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Curta'); filterController.filterGenerics(event.target, 'genre', 'curta', 'Curta', '1')">Curta</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="19401 18041 21156 20147 21587 21701 21582 21572 21604 21747 21756 21084 21749"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Documentário'); filterController.filterGenerics(event.target, 'genre', 'documentario', 'Documentário', '1')">Documentário</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="20330 20099 21605 21581 20207 17773 20255 21214 20313 21219 19957 21585 21380 21583 21601 21682 21340 21327 2354 11064"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Drama'); filterController.filterGenerics(event.target, 'genre', 'drama', 'Drama', '1')">Drama</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="21742 20358 21275 21757 20543 20277 21752"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Ficção'); filterController.filterGenerics(event.target, 'genre', 'ficcao', 'Ficção', '1')">Ficção</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="20973" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Infantil'); filterController.filterGenerics(event.target, 'genre', 'infantil', 'Infantil', '1')">Infantil</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="19921" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Policial'); filterController.filterGenerics(event.target, 'genre', 'policial', 'Policial', '1')">Policial</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="21219 20906 21601" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Suspense'); filterController.filterGenerics(event.target, 'genre', 'suspense', 'Suspense', '1')">Suspense</a>
+                        </li>
+                        <li role="option" filter-type="genre" class="list-group-item filter-it" movies="21763 21295 21744" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Genre', 'Terror'); filterController.filterGenerics(event.target, 'genre', 'terror', 'Terror', '1')">Terror</a>
+                        </li>
+                        <li class="filter-no-event-it msg-genre-1" style="display: none;">Não há gêneros para exibir.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div role="listbox" class="panel filter col-xs-12">
+                  <span class="filter-head collapsed" data-toggle="collapse" data-parent=".filter-home-main" href="#filter-type-movie-1">
+                    <span class="filter-label">Filme</span>
+                    <span class="filter-val 1" filter-selected="" filter-value="" id="filter-val-movie-1" type="movie"></span>
+                    <span class="filter-action" onclick="filterController.filterGenerics(event.target, 'movie', '', '', '1', '')"></span>
+                  </span>
+                  <div class="filter-content collapse fade" id="filter-type-movie-1">
+                    <div class="filter-wp">
+                      <ul id="parameters" class="list-group list-group-nostyle filter-options">
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="81 34 1486" date="20180815 20180814"
+                          movie-id="21327">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'A Aparição'); filterController.filterGenerics(event.target, 'movie', '21327', 'A Aparição', '1', 'a-aparicao')">A Aparição</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia drama" theaters="115 506 81 316 34 1486"
+                          date="20180815 20180814" movie-id="20313">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'A festa'); filterController.filterGenerics(event.target, 'movie', '20313', 'A festa', '1', 'a-festa')">A festa</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia" theaters="115 1463 1465 1332 1486 1464"
+                          date="20180815 20180814" movie-id="21736">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'A outra história do mundo'); filterController.filterGenerics(event.target, 'movie', '21736', 'A outra história do mundo', '1', 'a-outra-historia-do-mundo')">A outra história do mundo</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama suspense" theaters="25 3" date="20180815 20180814"
+                          movie-id="21601">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Acrimônia - Ela Quer Vingança'); filterController.filterGenerics(event.target, 'movie', '21601', 'Acrimônia - Ela Quer Vingança', '1', 'acrimonia-ela-quer-vinganca')">Acrimônia - Ela Quer Vingança</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="728 33 505" date="20180822 20180818 20180817 20180815 20180821 20180814"
+                          movie-id="20099">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Alguma coisa assim'); filterController.filterGenerics(event.target, 'movie', '20099', 'Alguma coisa assim', '1', 'alguma-coisa-assim')">Alguma coisa assim</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia-romantica" theaters="25 316 354 502 1281 886 1062 1280 1210 3"
+                          date="20180815 20180814" movie-id="21595">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Ana e Vitória'); filterController.filterGenerics(event.target, 'movie', '21595', 'Ana e Vitória', '1', 'ana-e-vitoria')">Ana e Vitória</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="concerto" theaters="433 1062 25 886 1280"
+                          date="20180916 20180912" movie-id="21453">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Andre Rieu’s Amore – My Tribute To Love '); filterController.filterGenerics(event.target, 'movie', '21453', 'Andre Rieu’s Amore – My Tribute To Love ', '1', 'andre-rieus-amore-my-tribute-to-love')">Andre Rieu’s Amore – My Tribute To Love </a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="acao suspense" theaters="433" date="20180815 20180814"
+                          movie-id="20906">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Arranha-Céu: Coragem sem Limite'); filterController.filterGenerics(event.target, 'movie', '20906', 'Arranha-Céu: Coragem sem Limite', '1', 'arranha-ceu-coragem-sem-limite')">Arranha-Céu: Coragem sem Limite</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="728" date="20180815"
+                          movie-id="21156">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Auto de Resistência '); filterController.filterGenerics(event.target, 'movie', '21156', 'Auto de Resistência ', '1', 'auto-de-resistencia')">Auto de Resistência </a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia-romantica" theaters="728"
+                          date="20180826 20180828 20180824 20180823 20180825 20180829" movie-id="21356">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Benzinho'); filterController.filterGenerics(event.target, 'movie', '21356', 'Benzinho', '1', 'benzinho')">Benzinho</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="1142 33"
+                          date="20180815 20180814" movie-id="21582">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Bergman - 100 Anos'); filterController.filterGenerics(event.target, 'movie', '21582', 'Bergman - 100 Anos', '1', 'bergman-100-anos')">Bergman - 100 Anos</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="acao ficcao" theaters="316 886" date="20180922 20180926"
+                          movie-id="21742">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'BraveStorm '); filterController.filterGenerics(event.target, 'movie', '21742', 'BraveStorm ', '1', 'bravestorm')">BraveStorm </a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="animacao" theaters="316 886" date="20180825 20180829"
+                          movie-id="21743">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Bungo Stray Dogs: Dead Apple'); filterController.filterGenerics(event.target, 'movie', '21743', 'Bungo Stray Dogs: Dead Apple', '1', 'bungo-stray-dogs-dead-apple')">Bungo Stray Dogs: Dead Apple</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="33 1486" date="20180815 20180814"
+                          movie-id="17773">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Café'); filterController.filterGenerics(event.target, 'movie', '17773', 'Café', '1', 'cafe')">Café</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="33" date="20180815 20180814"
+                          movie-id="21701">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Como fotografei os Yanomami'); filterController.filterGenerics(event.target, 'movie', '21701', 'Como fotografei os Yanomami', '1', 'como-fotografei-os-yanomami')">Como fotografei os Yanomami</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="33" date="20180815 20180814"
+                          movie-id="21214">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Custódia'); filterController.filterGenerics(event.target, 'movie', '21214', 'Custódia', '1', 'custodia')">Custódia</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia" theaters="506 1465 34 1486 1464"
+                          date="20180815 20180814" movie-id="21332">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'De carona para o amor'); filterController.filterGenerics(event.target, 'movie', '21332', 'De carona para o amor', '1', 'de-carona-para-o-amor')">De carona para o amor</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="1332" date="20180815"
+                          movie-id="20147">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Dedo na ferida'); filterController.filterGenerics(event.target, 'movie', '20147', 'Dedo na ferida', '1', 'dedo-na-ferida')">Dedo na ferida</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="1142 34" date="20180815 20180814"
+                          movie-id="21380">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Desobediência'); filterController.filterGenerics(event.target, 'movie', '21380', 'Desobediência', '1', 'desobediencia')">Desobediência</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia" theaters="1142" date="20180815 20180814"
+                          movie-id="21290">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Do jeito que elas querem'); filterController.filterGenerics(event.target, 'movie', '21290', 'Do jeito que elas querem', '1', 'do-jeito-que-elas-querem')">Do jeito que elas querem</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="33" date="20180815 20180814"
+                          movie-id="21583">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Egon Schiele – Morte e Donzela'); filterController.filterGenerics(event.target, 'movie', '21583', 'Egon Schiele – Morte e Donzela', '1', 'egon-schiele-morte-e-donzela')">Egon Schiele – Morte e Donzela</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="concertos" theaters="1055 4" date="20180816"
+                          movie-id="21753">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Elvis: '68 Comeback - Special Edition'); filterController.filterGenerics(event.target, 'movie', '21753', 'Elvis: '68 Comeback - Special Edition', '1', 'elvis-68-comeback-special-edition')">Elvis: '68 Comeback - Special Edition</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="354 4 3"
+                          date="20180815 20180814" movie-id="21587">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Fátima, O Último Mistério'); filterController.filterGenerics(event.target, 'movie', '21587', 'Fátima, O Último Mistério', '1', 'fatima-o-ultimo-misterio')">Fátima, O Último Mistério</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia" theaters="4" date="20180828"
+                          movie-id="6044">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Grease Nos Tempos da Brilhantina'); filterController.filterGenerics(event.target, 'movie', '6044', 'Grease Nos Tempos da Brilhantina', '1', 'grease-nos-tempos-da-brilhantina')">Grease Nos Tempos da Brilhantina</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="terror" theaters="25" date="20180815"
+                          movie-id="21295">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Hereditário'); filterController.filterGenerics(event.target, 'movie', '21295', 'Hereditário', '1', 'hereditario')">Hereditário</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="1142 34 1463"
+                          date="20180815 20180814" movie-id="21604">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Hilda Hilst pede contato'); filterController.filterGenerics(event.target, 'movie', '21604', 'Hilda Hilst pede contato', '1', 'hilda-hilst-pede-contato')">Hilda Hilst pede contato</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="728" date="20180826 20180830 20180828 20180824 20180823 20180825 20180829"
+                          movie-id="21747">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Histórias que Nosso Cinema (não) Contava'); filterController.filterGenerics(event.target, 'movie', '21747', 'Histórias que Nosso Cinema (não) Contava', '1', 'historias-que-nosso-cinema-nao-contava')">Histórias que Nosso Cinema (não) Contava</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="acao aventura" theaters="953 502 1100 1280 433 9 1281 855 14 25 901"
+                          date="20180815 20180814" movie-id="20541">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Homem-Formiga e a Vespa'); filterController.filterGenerics(event.target, 'movie', '20541', 'Homem-Formiga e a Vespa', '1', 'homem-formiga-e-a-vespa')">Homem-Formiga e a Vespa</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="animacao comedia infantil" theaters="886 1469 953 901 3 1322 4 1280 1210 1100 354 398 2 14 502 855 25 1062 1046 1281 1273 433 830 512 9"
+                          date="20180822 20180818 20180817 20180815 20180820 20180819 20180821 20180816 20180814" movie-id="20973">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Hotel Transilvânia 3: Férias Monstruosas'); filterController.filterGenerics(event.target, 'movie', '20973', 'Hotel Transilvânia 3: Férias Monstruosas', '1', 'hotel-transilvania-3-ferias-monstruosas')">Hotel Transilvânia 3: Férias Monstruosas</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="1142 316 34" date="20180815 20180814"
+                          movie-id="21581">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Ilha dos Cachorros'); filterController.filterGenerics(event.target, 'movie', '21581', 'Ilha dos Cachorros', '1', 'ilha-dos-cachorros')">Ilha dos Cachorros</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="acao aventura documentario" theaters="728"
+                          date="20180824 20180814" movie-id="21084">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Imagens do Estado Novo - 1937-45'); filterController.filterGenerics(event.target, 'movie', '21084', 'Imagens do Estado Novo - 1937-45', '1', 'imagens-do-estado-novo-1937-45')">Imagens do Estado Novo - 1937-45</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="acao aventura ficcao" theaters="1281 9 433 1062 14 855 25 1273"
+                          date="20180815 20180814" movie-id="20543">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Jurassic World: Reino Ameaçado'); filterController.filterGenerics(event.target, 'movie', '20543', 'Jurassic World: Reino Ameaçado', '1', 'jurassic-world-reino-ameacado')">Jurassic World: Reino Ameaçado</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="33 316 1332" date="20180815 20180814"
+                          movie-id="21585">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Lámen Shop'); filterController.filterGenerics(event.target, 'movie', '21585', 'Lámen Shop', '1', 'lamen-shop')">Lámen Shop</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="animacao" theaters="728" date="20180826 20180819"
+                          movie-id="21754">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Loulou e outros lobos'); filterController.filterGenerics(event.target, 'movie', '21754', 'Loulou e outros lobos', '1', 'loulou-e-outros-lobos')">Loulou e outros lobos</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia-musical" theaters="886 18 17 953 901 506 25 423 398 354 3 502 81 1322 1055 1280 1210 9 34 505 4 316 14 1304 433 2 1062 1046 1281 1273 830 512"
+                          date="20180822 20180818 20180817 20180815 20180820 20180819 20180821 20180816 20180814" movie-id="20981">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Mamma Mia! Lá vamos nós de novo!'); filterController.filterGenerics(event.target, 'movie', '20981', 'Mamma Mia! Lá vamos nós de novo!', '1', 'mamma-mia-la-vamos-nos-de-novo')">Mamma Mia! Lá vamos nós de novo!</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="ficcao" theaters="886 953 901 18 1100 14 25 3 17 1280 1210 423 4 2 855 502 1322 354 398 1062 1046 1281 1273 433 830 512 9"
+                          date="20180822 20180818 20180817 20180815 20180820 20180819 20180821 20180816 20180814" movie-id="21275">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'MegaTubarão'); filterController.filterGenerics(event.target, 'movie', '21275', 'MegaTubarão', '1', 'megatubarao')">MegaTubarão</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="acao" theaters="886 953 901 506 18 1100 25 423 9 398 354 3 17 1322 1055 1280 1210 4 115 316 14 502 855 1304 433 1469 1062 1046 2 1281 1273 505 830 512"
+                          date="20180822 20180818 20180817 20180815 20180820 20180819 20180821 20180816 20180814" movie-id="20990">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Missão Impossível - Efeito Fallout'); filterController.filterGenerics(event.target, 'movie', '20990', 'Missão Impossível - Efeito Fallout', '1', 'missao-impossivel-efeito-fallout')">Missão Impossível - Efeito Fallout</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="728" date="20180818 20180826 20180825"
+                          movie-id="19401">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'No intenso agora'); filterController.filterGenerics(event.target, 'movie', '19401', 'No intenso agora', '1', 'no-intenso-agora')">No intenso agora</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama suspense" theaters="33" date="20180815 20180814"
+                          movie-id="21219">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'O amante duplo'); filterController.filterGenerics(event.target, 'movie', '21219', 'O amante duplo', '1', 'o-amante-duplo')">O amante duplo</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="ficcao" theaters="728 506 316 34 1486"
+                          date="20180822 20180818 20180817 20180815 20180819 20180830 20180831 20180821 20180816 20180823 20180814"
+                          movie-id="20358">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'O animal cordial'); filterController.filterGenerics(event.target, 'movie', '20358', 'O animal cordial', '1', 'o-animal-cordial')">O animal cordial</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="1463 1465 1332 34 1464"
+                          date="20180815 20180814" movie-id="21572">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'O Desmonte Do Monte'); filterController.filterGenerics(event.target, 'movie', '21572', 'O Desmonte Do Monte', '1', 'o-desmonte-do-monte')">O Desmonte Do Monte</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia-dramatica drama" theaters="25 316 34 901 1281 886 506 1062 3 1280"
+                          date="20180815 20180814" movie-id="20255">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'O nome da morte'); filterController.filterGenerics(event.target, 'movie', '20255', 'O nome da morte', '1', 'o-nome-da-morte')">O nome da morte</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia" theaters="505 506 34 81"
+                          date="20180815 20180814" movie-id="21335">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'O orgulho'); filterController.filterGenerics(event.target, 'movie', '21335', 'O orgulho', '1', 'o-orgulho')">O orgulho</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="acao comedia policial" theaters="1142 25"
+                          date="20180815 20180814" movie-id="19921">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Oito Mulheres e Um Segredo'); filterController.filterGenerics(event.target, 'movie', '19921', 'Oito Mulheres e Um Segredo', '1', 'oito-mulheres-e-um-segredo')">Oito Mulheres e Um Segredo</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="33" date="20180814"
+                          movie-id="21749">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Onde Está Você, João Gilberto?'); filterController.filterGenerics(event.target, 'movie', '21749', 'Onde Está Você, João Gilberto?', '1', 'onde-esta-voce-joao-gilberto')">Onde Está Você, João Gilberto?</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="curta" theaters="728" date="20180819"
+                          movie-id="21709">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Os Curtas De Gabriela Amaral Almeida'); filterController.filterGenerics(event.target, 'movie', '21709', 'Os Curtas De Gabriela Amaral Almeida', '1', 'os-curtas-de-gabriela-amaral-almeida')">Os Curtas De Gabriela Amaral Almeida</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="aventura" theaters="34" date="20180815 20180814"
+                          movie-id="21705">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Os Incontestáveis'); filterController.filterGenerics(event.target, 'movie', '21705', 'Os Incontestáveis', '1', 'os-incontestaveis')">Os Incontestáveis</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="animacao aventura" theaters="1469 953 901 3 2 1322 1280 1210 1100 354 398 4 14 502 855 25 1062 1046 1281 1273 433 830 512 9"
+                          date="20180822 20180818 20180817 20180815 20180820 20180819 20180821 20180816 20180814" movie-id="20532">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Os Incríveis 2 '); filterController.filterGenerics(event.target, 'movie', '20532', 'Os Incríveis 2 ', '1', 'os-incriveis-2')">Os Incríveis 2 </a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="505 34 1486" date="20180815 20180814"
+                          movie-id="21340">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Promessa ao amanhecer '); filterController.filterGenerics(event.target, 'movie', '21340', 'Promessa ao amanhecer ', '1', 'promessa-ao-amanhecer')">Promessa ao amanhecer </a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="728" date="20180825 20180829"
+                          movie-id="11064">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Que Horas Ela Volta?'); filterController.filterGenerics(event.target, 'movie', '11064', 'Que Horas Ela Volta?', '1', 'que-horas-ela-volta')">Que Horas Ela Volta?</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="ficcao" theaters="3" date="20180815 20180814"
+                          movie-id="20277">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Querido embaixador'); filterController.filterGenerics(event.target, 'movie', '20277', 'Querido embaixador', '1', 'querido-embaixador')">Querido embaixador</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="728" date="20180816 20180825"
+                          movie-id="21756">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Retrato de Jason'); filterController.filterGenerics(event.target, 'movie', '21756', 'Retrato de Jason', '1', 'retrato-de-jason')">Retrato de Jason</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="ficcao" theaters="728" date="20180826 20180828"
+                          movie-id="21752">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Riscado'); filterController.filterGenerics(event.target, 'movie', '21752', 'Riscado', '1', 'riscado')">Riscado</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="ficcao" theaters="728" date="20180818 20180830"
+                          movie-id="21757">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Se...'); filterController.filterGenerics(event.target, 'movie', '21757', 'Se...', '1', 'se')">Se...</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="728" date="20180819"
+                          movie-id="2354">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Sudoeste'); filterController.filterGenerics(event.target, 'movie', '2354', 'Sudoeste', '1', 'sudoeste')">Sudoeste</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="316" date="20180815 20180814"
+                          movie-id="19957">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Tesnota'); filterController.filterGenerics(event.target, 'movie', '19957', 'Tesnota', '1', 'tesnota')">Tesnota</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="acao terror" theaters="316 886" date="20180915 20180919"
+                          movie-id="21744">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Tokyo Ghoul'); filterController.filterGenerics(event.target, 'movie', '21744', 'Tokyo Ghoul', '1', 'tokyo-ghoul')">Tokyo Ghoul</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="1142 33 1465 1463 34 1464"
+                          date="20180815 20180814" movie-id="20207">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Uma casa à beira-mar'); filterController.filterGenerics(event.target, 'movie', '20207', 'Uma casa à beira-mar', '1', 'uma-casa-a-beira-mar')">Uma casa à beira-mar</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="comedia" theaters="1100 3 502 1322 1055 354 433 512 14 855 25"
+                          date="20180815 20180814" movie-id="21553">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Uma Quase Dupla'); filterController.filterGenerics(event.target, 'movie', '21553', 'Uma Quase Dupla', '1', 'uma-quase-dupla')">Uma Quase Dupla</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="728" date="20180822 20180818 20180817 20180819 20180830 20180831 20180821 20180816 20180828 20180823 20180829"
+                          movie-id="20330">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Unicórnio'); filterController.filterGenerics(event.target, 'movie', '20330', 'Unicórnio', '1', 'unicornio')">Unicórnio</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="acao drama" theaters="886 18 17 953 901 506 25 398 354 2 3 1055 1280 1210 505 423 4 115 316 14 502 855 1304 433 1062 1046 1281 1273 830 512 9"
+                          date="20180822 20180818 20180817 20180815 20180820 20180819 20180821 20180816 20180814" movie-id="21605">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Vidas à deriva'); filterController.filterGenerics(event.target, 'movie', '21605', 'Vidas à deriva', '1', 'vidas-a-deriva')">Vidas à deriva</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="documentario" theaters="1142" date="20180815 20180814"
+                          movie-id="18041">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Vinte anos'); filterController.filterGenerics(event.target, 'movie', '18041', 'Vinte anos', '1', 'vinte-anos')">Vinte anos</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="terror" theaters="33" date="20180815 20180814"
+                          movie-id="21763">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Virgens acorrentadas'); filterController.filterGenerics(event.target, 'movie', '21763', 'Virgens acorrentadas', '1', 'virgens-acorrentadas')">Virgens acorrentadas</a>
+                        </li>
+                        <li role="option" filter-type="movie" class="list-group-item filter-it ng-scope" genre="drama" theaters="1142 115 316 506 33 505"
+                          date="20180815 20180814" movie-id="21682">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Movie', 'Você Nunca Esteve Realmente Aqui'); filterController.filterGenerics(event.target, 'movie', '21682', 'Você Nunca Esteve Realmente Aqui', '1', 'voce-nunca-esteve-realmente-aqui')">Você Nunca Esteve Realmente Aqui</a>
+                        </li>
+                        <li class="filter-no-event-it msg-movie-1" style="display: none;">Não há filmes para exibir.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div role="listbox" class="panel filter col-xs-12">
+                  <span class="filter-head collapsed" data-toggle="collapse" data-parent=".filter-home-main" href="#filter-type-neighborhood-1">
+                    <span class="filter-label">Bairro</span>
+                    <span class="filter-val 1" filter-selected="" id="filter-val-neighborhood-1" type="neighborhood"></span>
+                    <span class="filter-action" onclick="filterController.filterGenerics(event.target, 'neighborhood', '', '', '1')"></span>
+                  </span>
+                  <div class="filter-content collapse fade" id="filter-type-neighborhood-1">
+                    <div class="filter-wp">
+                      <ul id="parameters" class="list-group list-group-nostyle filter-options">
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="502" movies="21275 21595 20990 20973 21605 20981 21553 20532 20541"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Bangu'); filterController.filterGenerics(event.target, 'neighborhood', 'bangu', 'Bangu', '1')">Bangu</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="25 1273 3 1210 1486 1055 115" movies="21453 20543 21275 21595 17773 20255 20990 20973 21605 21295 21587 20313 20981 21736 20358 21332 20277 21601 21553 21682 20532 19921 21340 21327 20541 21753"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Barra da Tijuca'); filterController.filterGenerics(event.target, 'neighborhood', 'barra-da-tijuca', 'Barra da Tijuca', '1')">Barra da Tijuca</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="1469" movies="20973 20532 20990"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Bonsucesso'); filterController.filterGenerics(event.target, 'neighborhood', 'bonsucesso', 'Bonsucesso', '1')">Bonsucesso</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="316 34 4 2 33" movies="21742 21581 21275 21595 20207 17773 21763 20255 21214 20990 20973 20099 21605 21587 20313 21219 20981 21705 19957 20358 21701 21585 21332 21582 21380 21583 21335 21572 21682 20532 21340 21327 21604 21753 6044 21743 21749 21744"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Botafogo'); filterController.filterGenerics(event.target, 'neighborhood', 'botafogo', 'Botafogo', '1')">Botafogo</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="433" movies="21453 20543 21275 20990 20973 21605 20981 20906 21553 20532 20541"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Cachambi'); filterController.filterGenerics(event.target, 'neighborhood', 'cachambi', 'Cachambi', '1')">Cachambi</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="1281" movies="20543 21275 21595 20255 20990 20973 21605 20981 20532 20541"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Campo Dos Afonsos'); filterController.filterGenerics(event.target, 'neighborhood', 'campo-dos-afonsos', 'Campo Dos Afonsos', '1')">Campo Dos Afonsos</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="1062 855" movies="21453 20543 21275 21595 20255 20990 20973 21605 20981 21553 20532 20541"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Campo Grande'); filterController.filterGenerics(event.target, 'neighborhood', 'campo-grande', 'Campo Grande', '1')">Campo Grande</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="18 1465" movies="21275 20207 20990 21605 20981 21736 21332 21572"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Catete'); filterController.filterGenerics(event.target, 'neighborhood', 'catete', 'Catete', '1')">Catete</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="1304" movies="20990 21605 20981"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Centro'); filterController.filterGenerics(event.target, 'neighborhood', 'centro', 'Centro', '1')">Centro</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="17 1332" movies="21275 20147 20990 21605 20981 21736 21585 21572"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Copacabana'); filterController.filterGenerics(event.target, 'neighborhood', 'copacabana', 'Copacabana', '1')">Copacabana</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="14" movies="20543 21275 20990 20973 21605 20981 21553 20532 20541"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Del Castilho'); filterController.filterGenerics(event.target, 'neighborhood', 'del-castilho', 'Del Castilho', '1')">Del Castilho</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="728 506" movies="20330 20099 20358 21757 19401 21156 20255 20990 21605 20313 20981 21332 21335 21682 21752 21356 21754 21747 21709 2354 21756 21084 11064"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Gávea'); filterController.filterGenerics(event.target, 'neighborhood', 'gavea', 'Gávea', '1')">Gávea</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="953" movies="21275 20990 20973 21605 20981 20532 20541"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Guadalupe'); filterController.filterGenerics(event.target, 'neighborhood', 'guadalupe', 'Guadalupe', '1')">Guadalupe</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="830" movies="21275 20990 20973 21605 20981 20532"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Ilha do Governador'); filterController.filterGenerics(event.target, 'neighborhood', 'ilha-do-governador', 'Ilha do Governador', '1')">Ilha do Governador</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="1142 1464 81" movies="21581 20207 18041 20313 20981 21736 21332 21290 21582 21380 21335 21572 21682 19921 21327 21604"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Ipanema'); filterController.filterGenerics(event.target, 'neighborhood', 'ipanema', 'Ipanema', '1')">Ipanema</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="901" movies="21275 20255 20990 20973 21605 20981 20532 20541"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Irajá'); filterController.filterGenerics(event.target, 'neighborhood', 'iraja', 'Irajá', '1')">Irajá</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="886 423" movies="20973 21275 20981 20990 21605 21595 20255 21453 21742 21743 21744"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Leblon'); filterController.filterGenerics(event.target, 'neighborhood', 'leblon', 'Leblon', '1')">Leblon</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="1100" movies="21275 20990 20973 21553 20532 20541"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Madureira'); filterController.filterGenerics(event.target, 'neighborhood', 'madureira', 'Madureira', '1')">Madureira</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="1046" movies="21275 20990 20973 21605 20981 20532"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Méier'); filterController.filterGenerics(event.target, 'neighborhood', 'meier', 'Méier', '1')">Méier</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="1280 398" movies="21275 21595 20255 20990 20973 21605 20981 20532 20541 21453"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Recreio'); filterController.filterGenerics(event.target, 'neighborhood', 'recreio', 'Recreio', '1')">Recreio</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="1463" movies="20207 21736 21572 21604"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Santa Teresa'); filterController.filterGenerics(event.target, 'neighborhood', 'santa-teresa', 'Santa Teresa', '1')">Santa Teresa</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="505" movies="20990 20099 21605 20981 21335 21682 21340"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'São Conrado'); filterController.filterGenerics(event.target, 'neighborhood', 'sao-conrado', 'São Conrado', '1')">São Conrado</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="1322" movies="21275 20990 20973 20981 21553 20532"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Tanque'); filterController.filterGenerics(event.target, 'neighborhood', 'tanque', 'Tanque', '1')">Tanque</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="512" movies="21275 20990 20973 21605 20981 21553 20532"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Tijuca'); filterController.filterGenerics(event.target, 'neighborhood', 'tijuca', 'Tijuca', '1')">Tijuca</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="9" movies="20543 21275 20990 20973 21605 20981 20532 20541"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Vila Isabel'); filterController.filterGenerics(event.target, 'neighborhood', 'vila-isabel', 'Vila Isabel', '1')">Vila Isabel</a>
+                        </li>
+                        <li role="option" filter-type="neighborhood" class="list-group-item filter-it" theaters="354" movies="21275 21595 20990 20973 21605 21587 20981 21553 20532"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Neighborhood', 'Vila Kosmos'); filterController.filterGenerics(event.target, 'neighborhood', 'vila-kosmos', 'Vila Kosmos', '1')">Vila Kosmos</a>
+                        </li>
+                        <li class="filter-no-event-it msg-neighborhood-1" style="display: none;">Não há bairros para exibir.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div role="listbox" class="panel filter col-xs-12">
+                  <span class="filter-head collapsed" data-toggle="collapse" data-parent=".filter-home-main" href="#filter-type-theaters-1">
+                    <span class="filter-label">Cinema</span>
+                    <span class="filter-val 1" filter-selected="" filter-value="" id="filter-val-theaters-1" type="theater"></span>
+                    <span class="filter-action" onclick="filterController.filterGenerics(event.target, 'theaters', '', '', '1', '')"></span>
+                  </span>
+                  <div class="filter-content collapse fade" id="filter-type-theaters-1">
+                    <div class="filter-wp">
+                      <ul id="parameters" class="list-group list-group-nostyle filter-options">
+                        <li role="option" search-key="953" filter-type="theaters" class="list-group-item filter-it" neighborhood="guadalupe" movies="21275 20990 20973 21605 20981 20532 20541"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cine Araújo Jardim Guadalupe'); filterController.filterGenerics(event.target, 'theaters', '953', 'Cine Araújo Jardim Guadalupe', '1', 'cine-araujo-jardim-guadalupe')">Cine Araújo Jardim Guadalupe</a>
+                        </li>
+                        <li role="option" search-key="1464" filter-type="theaters" class="list-group-item filter-it" neighborhood="ipanema" movies="20207 21736 21332 21572"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cine Cândido Mendes'); filterController.filterGenerics(event.target, 'theaters', '1464', 'Cine Cândido Mendes', '1', 'cine-candido-mendes')">Cine Cândido Mendes</a>
+                        </li>
+                        <li role="option" search-key="1469" filter-type="theaters" class="list-group-item filter-it" neighborhood="bonsucesso" movies="20973 20532 20990"
+                          date="20180822 20180818 20180817 20180815 20180820 20180819 20180821 20180816 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cine Carioca Nova Brasília'); filterController.filterGenerics(event.target, 'theaters', '1469', 'Cine Carioca Nova Brasília', '1', 'cine-carioca-nova-brasilia')">Cine Carioca Nova Brasília</a>
+                        </li>
+                        <li role="option" search-key="1486" filter-type="theaters" class="list-group-item filter-it" neighborhood="barra-da-tijuca"
+                          movies="17773 20313 21736 20358 21332 21340 21327" date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cine Casal Barra Point'); filterController.filterGenerics(event.target, 'theaters', '1486', 'Cine Casal Barra Point', '1', 'cine-casal-barra-point')">Cine Casal Barra Point</a>
+                        </li>
+                        <li role="option" search-key="1332" filter-type="theaters" class="list-group-item filter-it" neighborhood="copacabana" movies="20147 21736 21585 21572"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cine Joia'); filterController.filterGenerics(event.target, 'theaters', '1332', 'Cine Joia', '1', 'cine-joia')">Cine Joia</a>
+                        </li>
+                        <li role="option" search-key="1465" filter-type="theaters" class="list-group-item filter-it" neighborhood="catete" movies="20207 21736 21332 21572"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cine Museu da República'); filterController.filterGenerics(event.target, 'theaters', '1465', 'Cine Museu da República', '1', 'cine-museu-da-republica')">Cine Museu da República</a>
+                        </li>
+                        <li role="option" search-key="1304" filter-type="theaters" class="list-group-item filter-it" neighborhood="centro" movies="20990 21605 20981"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cine Odeon Net Claro - Centro Cultural LSR'); filterController.filterGenerics(event.target, 'theaters', '1304', 'Cine Odeon Net Claro - Centro Cultural LSR', '1', 'cine-odeon-net-claro-centro-cultural-lsr')">Cine Odeon Net Claro - Centro Cultural LSR</a>
+                        </li>
+                        <li role="option" search-key="1463" filter-type="theaters" class="list-group-item filter-it" neighborhood="santa-teresa"
+                          movies="20207 21736 21572 21604" date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cine Santa Teresa'); filterController.filterGenerics(event.target, 'theaters', '1463', 'Cine Santa Teresa', '1', 'cine-santa-teresa')">Cine Santa Teresa</a>
+                        </li>
+                        <li role="option" search-key="1142" filter-type="theaters" class="list-group-item filter-it" neighborhood="ipanema" movies="21581 20207 18041 21290 21582 21380 21682 19921 21604"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cine Special Laura Alvim'); filterController.filterGenerics(event.target, 'theaters', '1142', 'Cine Special Laura Alvim', '1', 'cine-special-laura-alvim')">Cine Special Laura Alvim</a>
+                        </li>
+                        <li role="option" search-key="1046" filter-type="theaters" class="list-group-item filter-it" neighborhood="meier" movies="21275 20990 20973 21605 20981 20532"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'CineCarioca Méier'); filterController.filterGenerics(event.target, 'theaters', '1046', 'CineCarioca Méier', '1', 'cinecarioca-meier')">CineCarioca Méier</a>
+                        </li>
+                        <li role="option" search-key="3" filter-type="theaters" class="list-group-item filter-it" neighborhood="barra-da-tijuca"
+                          movies="21275 21595 20255 20990 20973 21605 21587 20981 20277 21601 21553 20532" date="20180815 20180814"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinemark Barra Downtown'); filterController.filterGenerics(event.target, 'theaters', '3', 'Cinemark Barra Downtown', '1', 'cinemark-barra-downtown')">Cinemark Barra Downtown</a>
+                        </li>
+                        <li role="option" search-key="4" filter-type="theaters" class="list-group-item filter-it" neighborhood="botafogo" movies="21275 20990 20973 21605 21587 20981 20532 21753 6044"
+                          date="20180815 20180816 20180828 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinemark Botafogo'); filterController.filterGenerics(event.target, 'theaters', '4', 'Cinemark Botafogo', '1', 'cinemark-botafogo')">Cinemark Botafogo</a>
+                        </li>
+                        <li role="option" search-key="354" filter-type="theaters" class="list-group-item filter-it" neighborhood="vila-kosmos" movies="21275 21595 20990 20973 21605 21587 20981 21553 20532"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinemark Carioca Shopping'); filterController.filterGenerics(event.target, 'theaters', '354', 'Cinemark Carioca Shopping', '1', 'cinemark-carioca-shopping')">Cinemark Carioca Shopping</a>
+                        </li>
+                        <li role="option" search-key="1322" filter-type="theaters" class="list-group-item filter-it" neighborhood="tanque" movies="21275 20990 20973 20981 21553 20532"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinemark Jacarepagua'); filterController.filterGenerics(event.target, 'theaters', '1322', 'Cinemark Jacarepagua', '1', 'cinemark-jacarepagua')">Cinemark Jacarepagua</a>
+                        </li>
+                        <li role="option" search-key="1210" filter-type="theaters" class="list-group-item filter-it" neighborhood="barra-da-tijuca"
+                          movies="21275 21595 20990 20973 21605 20981 20532" date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinemark Metropolitano Barra'); filterController.filterGenerics(event.target, 'theaters', '1210', 'Cinemark Metropolitano Barra', '1', 'cinemark-metropolitano-barra')">Cinemark Metropolitano Barra</a>
+                        </li>
+                        <li role="option" search-key="1055" filter-type="theaters" class="list-group-item filter-it" neighborhood="barra-da-tijuca"
+                          movies="20990 21605 20981 21553 21753" date="20180815 20180816 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinemark Village Mall'); filterController.filterGenerics(event.target, 'theaters', '1055', 'Cinemark Village Mall', '1', 'cinemark-village-mall')">Cinemark Village Mall</a>
+                        </li>
+                        <li role="option" search-key="886" filter-type="theaters" class="list-group-item filter-it" neighborhood="leblon" movies="20973 21275 20981 20990 21605 21595 20255 21453 21742 21743 21744"
+                          date="20180822 20180818 20180817 20180815 20180912 20180820 20180926 20180819 20180821 20180816 20180829 20180814 20180919"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinépolis Lagoon'); filterController.filterGenerics(event.target, 'theaters', '886', 'Cinépolis Lagoon', '1', 'cinepolis-lagoon')">Cinépolis Lagoon</a>
+                        </li>
+                        <li role="option" search-key="1280" filter-type="theaters" class="list-group-item filter-it" neighborhood="recreio" movies="21275 21595 20255 20990 20973 21605 20981 20532 20541 21453"
+                          date="20180815 20180912 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinesystem Américas'); filterController.filterGenerics(event.target, 'theaters', '1280', 'Cinesystem Américas', '1', 'cinesystem-americas')">Cinesystem Américas</a>
+                        </li>
+                        <li role="option" search-key="502" filter-type="theaters" class="list-group-item filter-it" neighborhood="bangu" movies="21275 21595 20990 20973 21605 20981 21553 20532 20541"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinesystem Bangu - Rio de Janeiro'); filterController.filterGenerics(event.target, 'theaters', '502', 'Cinesystem Bangu - Rio de Janeiro', '1', 'cinesystem-bangu-rio-de-janeiro')">Cinesystem Bangu - Rio de Janeiro</a>
+                        </li>
+                        <li role="option" search-key="830" filter-type="theaters" class="list-group-item filter-it" neighborhood="ilha-do-governador"
+                          movies="21275 20990 20973 21605 20981 20532" date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinesystem Ilha do Governador'); filterController.filterGenerics(event.target, 'theaters', '830', 'Cinesystem Ilha do Governador', '1', 'cinesystem-ilha-do-governador')">Cinesystem Ilha do Governador</a>
+                        </li>
+                        <li role="option" search-key="1281" filter-type="theaters" class="list-group-item filter-it" neighborhood="campo-dos-afonsos"
+                          movies="20543 21275 21595 20255 20990 20973 21605 20981 20532 20541" date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinesystem Parque Shopping Sulacap'); filterController.filterGenerics(event.target, 'theaters', '1281', 'Cinesystem Parque Shopping Sulacap', '1', 'cinesystem-parque-shopping-sulacap')">Cinesystem Parque Shopping Sulacap</a>
+                        </li>
+                        <li role="option" search-key="398" filter-type="theaters" class="list-group-item filter-it" neighborhood="recreio" movies="21275 20990 20973 21605 20981 20532"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinesystem Recreio'); filterController.filterGenerics(event.target, 'theaters', '398', 'Cinesystem Recreio', '1', 'cinesystem-recreio')">Cinesystem Recreio</a>
+                        </li>
+                        <li role="option" search-key="901" filter-type="theaters" class="list-group-item filter-it" neighborhood="iraja" movies="21275 20255 20990 20973 21605 20981 20532 20541"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Cinesystem Via Brasil'); filterController.filterGenerics(event.target, 'theaters', '901', 'Cinesystem Via Brasil', '1', 'cinesystem-via-brasil')">Cinesystem Via Brasil</a>
+                        </li>
+                        <li role="option" search-key="316" filter-type="theaters" class="list-group-item filter-it" neighborhood="botafogo" movies="21742 21581 21595 20255 20990 21605 20313 20981 19957 20358 21585 21682 21743 21744"
+                          date="20180922 20180815 20180825 20180814 20180915" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Espaço Itaú de Cinema - Botafogo'); filterController.filterGenerics(event.target, 'theaters', '316', 'Espaço Itaú de Cinema - Botafogo', '1', 'espaco-itau-de-cinema-botafogo')">Espaço Itaú de Cinema - Botafogo</a>
+                        </li>
+                        <li role="option" search-key="115" filter-type="theaters" class="list-group-item filter-it" neighborhood="barra-da-tijuca"
+                          movies="20990 21605 20313 21736 21682" date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Espaço Rio Design'); filterController.filterGenerics(event.target, 'theaters', '115', 'Espaço Rio Design', '1', 'espaco-rio-design')">Espaço Rio Design</a>
+                        </li>
+                        <li role="option" search-key="33" filter-type="theaters" class="list-group-item filter-it" neighborhood="botafogo" movies="20207 17773 21763 21214 20099 21219 21701 21585 21582 21583 21682 21749"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Estação NET Botafogo'); filterController.filterGenerics(event.target, 'theaters', '33', 'Estação NET Botafogo', '1', 'estacao-net-botafogo')">Estação NET Botafogo</a>
+                        </li>
+                        <li role="option" search-key="506" filter-type="theaters" class="list-group-item filter-it" neighborhood="gavea" movies="20255 20990 21605 20313 20981 20358 21332 21335 21682"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Estação NET Gávea'); filterController.filterGenerics(event.target, 'theaters', '506', 'Estação NET Gávea', '1', 'estacao-net-gavea')">Estação NET Gávea</a>
+                        </li>
+                        <li role="option" search-key="81" filter-type="theaters" class="list-group-item filter-it" neighborhood="ipanema" movies="20313 20981 21335 21327"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Estação NET Ipanema'); filterController.filterGenerics(event.target, 'theaters', '81', 'Estação NET Ipanema', '1', 'estacao-net-ipanema')">Estação NET Ipanema</a>
+                        </li>
+                        <li role="option" search-key="34" filter-type="theaters" class="list-group-item filter-it" neighborhood="botafogo" movies="21581 20207 20255 20313 20981 21705 20358 21332 21380 21335 21572 21340 21327 21604"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Estação NET Rio'); filterController.filterGenerics(event.target, 'theaters', '34', 'Estação NET Rio', '1', 'estacao-net-rio')">Estação NET Rio</a>
+                        </li>
+                        <li role="option" search-key="728" filter-type="theaters" class="list-group-item filter-it" neighborhood="gavea" movies="20330 20099 20358 21757 19401 21156 21752 21356 21754 21747 21709 2354 21756 21084 11064"
+                          date="20180822 20180818 20180817 20180815 20180826 20180819 20180830 20180831 20180821 20180816 20180828 20180824 20180823 20180825 20180829 20180814"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Instituto Moreira Salles RJ'); filterController.filterGenerics(event.target, 'theaters', '728', 'Instituto Moreira Salles RJ', '1', 'instituto-moreira-salles-rj')">Instituto Moreira Salles RJ</a>
+                        </li>
+                        <li role="option" search-key="505" filter-type="theaters" class="list-group-item filter-it" neighborhood="sao-conrado" movies="20990 20099 21605 20981 21335 21682 21340"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Kinoplex Fashion Mall'); filterController.filterGenerics(event.target, 'theaters', '505', 'Kinoplex Fashion Mall', '1', 'kinoplex-fashion-mall')">Kinoplex Fashion Mall</a>
+                        </li>
+                        <li role="option" search-key="423" filter-type="theaters" class="list-group-item filter-it" neighborhood="leblon" movies="21275 20990 21605 20981"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Kinoplex Leblon'); filterController.filterGenerics(event.target, 'theaters', '423', 'Kinoplex Leblon', '1', 'kinoplex-leblon')">Kinoplex Leblon</a>
+                        </li>
+                        <li role="option" search-key="1100" filter-type="theaters" class="list-group-item filter-it" neighborhood="madureira" movies="21275 20990 20973 21553 20532 20541"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Kinoplex Madureira'); filterController.filterGenerics(event.target, 'theaters', '1100', 'Kinoplex Madureira', '1', 'kinoplex-madureira')">Kinoplex Madureira</a>
+                        </li>
+                        <li role="option" search-key="14" filter-type="theaters" class="list-group-item filter-it" neighborhood="del-castilho" movies="20543 21275 20990 20973 21605 20981 21553 20532 20541"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Kinoplex Nova América'); filterController.filterGenerics(event.target, 'theaters', '14', 'Kinoplex Nova América', '1', 'kinoplex-nova-america')">Kinoplex Nova América</a>
+                        </li>
+                        <li role="option" search-key="2" filter-type="theaters" class="list-group-item filter-it" neighborhood="botafogo" movies="21275 20990 20973 21605 20981 20532"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Kinoplex RioSul'); filterController.filterGenerics(event.target, 'theaters', '2', 'Kinoplex RioSul', '1', 'kinoplex-riosul')">Kinoplex RioSul</a>
+                        </li>
+                        <li role="option" search-key="18" filter-type="theaters" class="list-group-item filter-it" neighborhood="catete" movies="21275 20990 21605 20981"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Kinoplex São Luiz'); filterController.filterGenerics(event.target, 'theaters', '18', 'Kinoplex São Luiz', '1', 'kinoplex-sao-luiz')">Kinoplex São Luiz</a>
+                        </li>
+                        <li role="option" search-key="9" filter-type="theaters" class="list-group-item filter-it" neighborhood="vila-isabel" movies="20543 21275 20990 20973 21605 20981 20532 20541"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Kinoplex Shopping Boulevard RJ'); filterController.filterGenerics(event.target, 'theaters', '9', 'Kinoplex Shopping Boulevard RJ', '1', 'kinoplex-shopping-boulevard-rj')">Kinoplex Shopping Boulevard RJ</a>
+                        </li>
+                        <li role="option" search-key="512" filter-type="theaters" class="list-group-item filter-it" neighborhood="tijuca" movies="21275 20990 20973 21605 20981 21553 20532"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Kinoplex Tijuca'); filterController.filterGenerics(event.target, 'theaters', '512', 'Kinoplex Tijuca', '1', 'kinoplex-tijuca')">Kinoplex Tijuca</a>
+                        </li>
+                        <li role="option" search-key="1273" filter-type="theaters" class="list-group-item filter-it" neighborhood="barra-da-tijuca"
+                          movies="20543 21275 20990 20973 21605 20981 20532" date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Kinoplex Via Parque'); filterController.filterGenerics(event.target, 'theaters', '1273', 'Kinoplex Via Parque', '1', 'kinoplex-via-parque')">Kinoplex Via Parque</a>
+                        </li>
+                        <li role="option" search-key="855" filter-type="theaters" class="list-group-item filter-it" neighborhood="campo-grande" movies="20543 21275 20990 20973 21605 21553 20532 20541"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Kinoplex West Shopping'); filterController.filterGenerics(event.target, 'theaters', '855', 'Kinoplex West Shopping', '1', 'kinoplex-west-shopping')">Kinoplex West Shopping</a>
+                        </li>
+                        <li role="option" search-key="17" filter-type="theaters" class="list-group-item filter-it" neighborhood="copacabana" movies="21275 20990 21605 20981"
+                          date="20180815 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'Roxy'); filterController.filterGenerics(event.target, 'theaters', '17', 'Roxy', '1', 'roxy')">Roxy</a>
+                        </li>
+                        <li role="option" search-key="433" filter-type="theaters" class="list-group-item filter-it" neighborhood="cachambi" movies="21453 20543 21275 20990 20973 21605 20981 20906 21553 20532 20541"
+                          date="20180916 20180815 20180912 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'UCI Kinoplex Norte Shopping'); filterController.filterGenerics(event.target, 'theaters', '433', 'UCI Kinoplex Norte Shopping', '1', 'uci-kinoplex-norte-shopping')">UCI Kinoplex Norte Shopping</a>
+                        </li>
+                        <li role="option" search-key="25" filter-type="theaters" class="list-group-item filter-it" neighborhood="barra-da-tijuca"
+                          movies="21453 20543 21275 21595 20255 20990 20973 21605 21295 20981 21601 21553 20532 19921 20541"
+                          date="20180916 20180815 20180912 20180814" movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'UCI New York City Center'); filterController.filterGenerics(event.target, 'theaters', '25', 'UCI New York City Center', '1', 'uci-new-york-city-center')">UCI New York City Center</a>
+                        </li>
+                        <li role="option" search-key="1062" filter-type="theaters" class="list-group-item filter-it" neighborhood="campo-grande"
+                          movies="21453 20543 21275 21595 20255 20990 20973 21605 20981 20532" date="20180916 20180815 20180912 20180814"
+                          movies-filtered="">
+                          <a tabindex="0" onclick="eventLink(pageName, 'Filter by Theater', 'UCI ParkShopping Campo Grande'); filterController.filterGenerics(event.target, 'theaters', '1062', 'UCI ParkShopping Campo Grande', '1', 'uci-parkshopping-campo-grande')">UCI ParkShopping Campo Grande</a>
+                        </li>
+                        <li class="filter-no-event-it msg-theaters-1" style="display: none;">Não há cinemas para exibir.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div role="listbox" class="panel filter col-xs-12">
+                  <span class="filter-head collapsed" data-toggle="collapse" data-parent=".filter-home-main" href="#filter-type-dates-1">
+                    <span class="filter-label">Data</span>
+                    <span class="filter-val 1" filter-selected="" id="filter-val-date-1" type="date"></span>
+                    <span class="filter-action" onclick="filterController.filterGenerics(event.target, 'date', '', '', '1')"></span>
+                  </span>
+                  <div class="filter-content collapse fade" id="filter-type-dates-1">
+                    <div class="filter-wp">
+                      <ul id="parameters" class="date-lt date-month-lt2">
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="33 316 1332 1281 25 354 502 1062 3 1210 1280 953 901 506 423 398 17 81 1322 1055 886 9 34 505 4 512 830 14 1304 433 2 1046 18 1273 1100 855 1469 1142 115 728 1486 1465 1464 1463"
+                          movies="21585 21595 20981 20973 20543 20255 21583 21553 21682 20358 20099 20313 20541 21581 21582 21214 21749 21332 21290 21701 21604 19921 21219 21275 21380 21587 20532 21340 20990 21736 21601 21705 20906 21605 21763 18041 20207 17773 21084 21572 20277 21335 21327 19957"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'hoje 14/08'); filterController.filterGenerics(event.target, 'date', '20180814', '14/08', '1')">
+                            <time name="parametro-filtro" title="20180814">
+                              <span class="date-info ng-binding">hoje</span>
+                              <strong class="date-main-info ng-binding">14/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="1281 9 433 1062 14 855 25 1273 1142 316 34 953 901 18 1100 3 17 1280 1210 886 423 4 2 502 1322 354 398 1046 830 512 33 1465 1463 1464 1486 728 506 1332 1055 115 1304 1469 505 81"
+                          movies="20543 21581 21275 21595 20207 17773 18041 21763 21156 20255 20147 21214 20990 20973 20099 21605 21295 21587 20313 21219 20981 21736 20906 21705 19957 20358 21701 21585 21332 21290 21582 21380 21583 21335 20277 21572 21601 21553 21682 20532 19921 21340 21327 21604 20541"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'qua 15/08'); filterController.filterGenerics(event.target, 'date', '20180815', '15/08', '1')">
+                            <time name="parametro-filtro" title="20180815">
+                              <span class="date-info ng-binding">qua</span>
+                              <strong class="date-main-info ng-binding">15/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728 1055 4 886 1469" movies="20330 21756 21753 20973 20981 21605 20990 20358 21275 20532"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'qui 16/08'); filterController.filterGenerics(event.target, 'date', '20180816', '16/08', '1')">
+                            <time name="parametro-filtro" title="20180816">
+                              <span class="date-info ng-binding">qui</span>
+                              <strong class="date-main-info ng-binding">16/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728 886 1469" movies="20099 20973 20330 20981 20358 21275 20532 21605 20990"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'sex 17/08'); filterController.filterGenerics(event.target, 'date', '20180817', '17/08', '1')">
+                            <time name="parametro-filtro" title="20180817">
+                              <span class="date-info ng-binding">sex</span>
+                              <strong class="date-main-info ng-binding">17/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="886 1469 728" movies="20990 20532 21275 20358 21605 20981 20973 21757 19401 20099 20330"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'sáb 18/08'); filterController.filterGenerics(event.target, 'date', '20180818', '18/08', '1')">
+                            <time name="parametro-filtro" title="20180818">
+                              <span class="date-info ng-binding">sáb</span>
+                              <strong class="date-main-info ng-binding">18/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="886 1469 728" movies="20981 20973 20990 21605 21275 20358 21754 21709 20330 20532 2354"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'dom 19/08'); filterController.filterGenerics(event.target, 'date', '20180819', '19/08', '1')">
+                            <time name="parametro-filtro" title="20180819">
+                              <span class="date-info ng-binding">dom</span>
+                              <strong class="date-main-info ng-binding">19/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="886 1469" movies="20973 20981 20990 21605 21275 20532"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'seg 20/08'); filterController.filterGenerics(event.target, 'date', '20180820', '20/08', '1')">
+                            <time name="parametro-filtro" title="20180820">
+                              <span class="date-info ng-binding">seg</span>
+                              <strong class="date-main-info ng-binding">20/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728 1469 886" movies="20330 20099 20358 20532 21275 20990 21605 20973 20981"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'ter 21/08'); filterController.filterGenerics(event.target, 'date', '20180821', '21/08', '1')">
+                            <time name="parametro-filtro" title="20180821">
+                              <span class="date-info ng-binding">ter</span>
+                              <strong class="date-main-info ng-binding">21/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728 886 1469" movies="20330 20973 20099 20358 20532 21275 20981 20990 21605"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'qua 22/08'); filterController.filterGenerics(event.target, 'date', '20180822', '22/08', '1')">
+                            <time name="parametro-filtro" title="20180822">
+                              <span class="date-info ng-binding">qua</span>
+                              <strong class="date-main-info ng-binding">22/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728" movies="20358 21747 20330 21356" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'qui 23/08'); filterController.filterGenerics(event.target, 'date', '20180823', '23/08', '1')">
+                            <time name="parametro-filtro" title="20180823">
+                              <span class="date-info ng-binding">qui</span>
+                              <strong class="date-main-info ng-binding">23/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728" movies="21084 21747 21356" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'sex 24/08'); filterController.filterGenerics(event.target, 'date', '20180824', '24/08', '1')">
+                            <time name="parametro-filtro" title="20180824">
+                              <span class="date-info ng-binding">sex</span>
+                              <strong class="date-main-info ng-binding">24/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728 316" movies="11064 19401 21356 21756 21743 21747"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'sáb 25/08'); filterController.filterGenerics(event.target, 'date', '20180825', '25/08', '1')">
+                            <time name="parametro-filtro" title="20180825">
+                              <span class="date-info ng-binding">sáb</span>
+                              <strong class="date-main-info ng-binding">25/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728" movies="21752 21356 19401 21754 21747" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'dom 26/08'); filterController.filterGenerics(event.target, 'date', '20180826', '26/08', '1')">
+                            <time name="parametro-filtro" title="20180826">
+                              <span class="date-info ng-binding">dom</span>
+                              <strong class="date-main-info ng-binding">26/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728 4" movies="21356 21752 21747 20330 6044" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'ter 28/08'); filterController.filterGenerics(event.target, 'date', '20180828', '28/08', '1')">
+                            <time name="parametro-filtro" title="20180828">
+                              <span class="date-info ng-binding">ter</span>
+                              <strong class="date-main-info ng-binding">28/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728 886" movies="21356 21747 20330 11064 21743"
+                          movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'qua 29/08'); filterController.filterGenerics(event.target, 'date', '20180829', '29/08', '1')">
+                            <time name="parametro-filtro" title="20180829">
+                              <span class="date-info ng-binding">qua</span>
+                              <strong class="date-main-info ng-binding">29/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728" movies="21757 20358 21747 20330" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'qui 30/08'); filterController.filterGenerics(event.target, 'date', '20180830', '30/08', '1')">
+                            <time name="parametro-filtro" title="20180830">
+                              <span class="date-info ng-binding">qui</span>
+                              <strong class="date-main-info ng-binding">30/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="728" movies="20358 20330" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'sex 31/08'); filterController.filterGenerics(event.target, 'date', '20180831', '31/08', '1')">
+                            <time name="parametro-filtro" title="20180831">
+                              <span class="date-info ng-binding">sex</span>
+                              <strong class="date-main-info ng-binding">31/08</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="886 1280 25 1062 433" movies="21453" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'qua 12/09'); filterController.filterGenerics(event.target, 'date', '20180912', '12/09', '1')">
+                            <time name="parametro-filtro" title="20180912">
+                              <span class="date-info ng-binding">qua</span>
+                              <strong class="date-main-info ng-binding">12/09</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="316" movies="21744" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'sáb 15/09'); filterController.filterGenerics(event.target, 'date', '20180915', '15/09', '1')">
+                            <time name="parametro-filtro" title="20180915">
+                              <span class="date-info ng-binding">sáb</span>
+                              <strong class="date-main-info ng-binding">15/09</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="433 1062 25" movies="21453" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'dom 16/09'); filterController.filterGenerics(event.target, 'date', '20180916', '16/09', '1')">
+                            <time name="parametro-filtro" title="20180916">
+                              <span class="date-info ng-binding">dom</span>
+                              <strong class="date-main-info ng-binding">16/09</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="886" movies="21744" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'qua 19/09'); filterController.filterGenerics(event.target, 'date', '20180919', '19/09', '1')">
+                            <time name="parametro-filtro" title="20180919">
+                              <span class="date-info ng-binding">qua</span>
+                              <strong class="date-main-info ng-binding">19/09</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="316" movies="21742" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'sáb 22/09'); filterController.filterGenerics(event.target, 'date', '20180922', '22/09', '1')">
+                            <time name="parametro-filtro" title="20180922">
+                              <span class="date-info ng-binding">sáb</span>
+                              <strong class="date-main-info ng-binding">22/09</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li role="option" class="date-it filter-it" filter-type="date" theaters="886" movies="21742" movies-filtered="">
+                          <a class="date-lk" tabindex="0" onclick="eventLink(pageName, 'Filter by Date', 'qua 26/09'); filterController.filterGenerics(event.target, 'date', '20180926', '26/09', '1')">
+                            <time name="parametro-filtro" title="20180926">
+                              <span class="date-info ng-binding">qua</span>
+                              <strong class="date-main-info ng-binding">26/09</strong>
+                            </time>
+                          </a>
+                        </li>
+                        <li class="filter-no-event-it msg-dates-1" style="display: none;">Não há datas para exibir.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="frm-msg-error m-t-1 pull-xs-right pull-lg-left 1" style="display:none;">Selecione pelo menos um cinema ou um filme.</span>
+              <a tabindex="0" class="btn btn-primary pull-xs-right m-t-1 filter-btn-1" onclick="filterController.DoFilter(1); eventLink(pageName, 'Filter Applied', filterController.GetSelected(1))"
+                style="display:none;">Filtrar</a>
+
+            </div>
+          </div>
+        </div>
+        <!-- Filtro -->
+      </div>
+    </div>
+
   </div>
 
   <!-- TODO: Use global tracking methods instead of reimplementing them -->
@@ -72,23 +1048,23 @@
         });
       }
       if (typeof dataLayer !== 'undefined') {
-          dataLayer.push({
-            event: 'productClick',
-            eventLabel: product.title,
-            eventCategory: 'Product List Performance',
-            ecommerce: {
-              click: {
-                actionField: {
-                  list: listName
-                },
-                products: [{
-                  name: product.title,
-                  id: product.id,
-                  brand: product.distributor,
-                  position: String(productIndex + 1)
-                }]
-              }
+        dataLayer.push({
+          event: 'productClick',
+          eventLabel: product.title,
+          eventCategory: 'Product List Performance',
+          ecommerce: {
+            click: {
+              actionField: {
+                list: listName
+              },
+              products: [{
+                name: product.title,
+                id: product.id,
+                brand: product.distributor,
+                position: String(productIndex + 1)
+              }]
             }
+          }
         });
       }
     }
@@ -103,7 +1079,7 @@
         });
       }
       if (typeof dataLayer !== 'undefined') {
-        products.forEach(function(product, index) {
+        products.forEach(function (product, index) {
           dataLayer.push({
             ecommerce: {
               impressions: [{

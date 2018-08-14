@@ -42,7 +42,8 @@ Carousel Background
   transform: translateX(-50%);
   left: 50%;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 1440px; }
   .ing-carouselBackground img {
     z-index: -1;
     position: absolute;
@@ -52,7 +53,7 @@ Carousel Background
     left: -10px;
     opacity: 0;
     filter: blur(4px);
-    transition: opacity .6s ease-in-out; }
+    transition: opacity 0.6s ease-in-out; }
   .ing-carouselBackground img[data-active="true"] {
     z-index: 0;
     opacity: 0.4; }
@@ -75,7 +76,7 @@ Carousel Background
 .ing-carouselBackground__inner {
   height: 100%; }
   .ing-carouselBackground__inner:empty {
-    opacity: .5;
+    opacity: 0.5;
     background: center center no-repeat url("//ingresso-a.akamaihd.net/catalog/Content/img/placeholder-movie-image-13223897b1.jpg");
     background-size: cover; }
   @media (min-width: 768px) {
@@ -136,7 +137,7 @@ Carousel Description
   top: 30px;
   width: 200px;
   opacity: 0;
-  transition: opacity .6s ease-in-out; }
+  transition: opacity 0.6s ease-in-out; }
   .ing-carouselDescription__titleWrapper[data-active="true"] {
     opacity: 1; }
 
@@ -284,6 +285,10 @@ Mobile Only
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__tagTitle {
       position: absolute;
       top: 0; }
+    .ing-carousel:not(.mobile-only) .ing-carouselDescription__wrapper {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 30px; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__link {
       pointer-events: initial; }
     .ing-carousel:not(.mobile-only) .ing-carouselItem.swiper-slide-prev {
@@ -299,7 +304,7 @@ Mobile Only
       overflow: visible; }
       .ing-carousel:not(.mobile-only) .ing-carouselItem[class*="swiper-slide-active"]
 > .ing-carouselItem__inner > .ing-carouselItem__link::after {
-        content: '';
+        content: "";
         width: 900vh;
         height: 100vh;
         display: block;

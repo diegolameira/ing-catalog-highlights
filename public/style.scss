@@ -212,11 +212,23 @@ Carousel Item
   height: 146.3px;
   padding: 20px 0;
   cursor: pointer;
+  transition: height 0.6s;
 
   &.swiper-slide-active {
     width: 134.3px;
     height: 197.5px;
     transform: translateY(-10.5%);
+  }
+
+  @media (min-width: 1024px) {
+    width: 158px;
+    height: 234px;
+
+    &.swiper-slide-active {
+      width: 200px;
+      height: 292.5px;
+      transform: translateY(-8.5%);
+    }
   }
 }
 
@@ -348,6 +360,10 @@ Carousel Item
       }
     }
 
+    .swiper-wrapper {
+      margin-top: 33px;
+    }
+
     .swiper-button-prev,
     .swiper-button-next {
       display: block;
@@ -361,11 +377,11 @@ Mobile Only
 ==============================================*/
 
   &:not(.mobile-only) {
-    @media (min-width: 425px) {
+    // @media (min-width: 425px) {
       // .ing-carouselItem[class*="swiper-slide-active"] .ing-carouselItem__inner {
       //   transform: scale(1.25) translateY(2.5%);
       // }
-    }
+    // }
 
     @media (min-width: 768px) {
       .ing-carouselBackground {
@@ -439,21 +455,6 @@ Mobile Only
     }
 
     @media (min-width: 1024px) {
-      .swiper-wrapper {
-        margin-top: 33px;
-      }
-
-      .ing-carouselItem {
-        width: 158px;
-        height: 234px;
-
-        &.swiper-slide-active {
-          width: 200px;
-          height: 292.5px;
-          transform: translateY(-8.5%);
-        }
-      }
-
       .ing-carouselDescription {
         max-width: 320px;
       }
@@ -475,26 +476,26 @@ NEED FIX
 mobile and mobileOnly items margin compensation
 ==============================================*/
 
-@media (min-width: 426px) and (max-width: 767px) {
-  :not(.swiper-slide-active) > .ing-carouselItem__inner {
-    transform: scale(0.95) translateX(-15%);
-  }
+// @media (min-width: 426px) and (max-width: 767px) {
+//   :not(.swiper-slide-active) > .ing-carouselItem__inner {
+//     transform: scale(0.95) translateX(-15%);
+//   }
 
-  .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
-    transform: translateX(15%);
-  }
-}
+//   .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
+//     transform: translateX(15%);
+//   }
+// }
 
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
 
-  .ing-carousel.mobile-only {
-    :not(.swiper-slide-active) > .ing-carouselItem__inner {
-      transform: scale(0.95) translateX(-10%);
-    }
+//   .ing-carousel.mobile-only {
+//     :not(.swiper-slide-active) > .ing-carouselItem__inner {
+//       transform: scale(0.95) translateX(-10%);
+//     }
 
-    .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
-      transform: translateX(10%);
-    }
-  }
+//     .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
+//       transform: translateX(10%);
+//     }
+//   }
 
-}
+// }

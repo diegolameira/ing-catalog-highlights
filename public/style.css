@@ -154,11 +154,20 @@ Carousel Item
   width: 99.5px;
   height: 146.3px;
   padding: 20px 0;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: height 0.6s; }
   .ing-carouselItem.swiper-slide-active {
     width: 134.3px;
     height: 197.5px;
     transform: translateY(-10.5%); }
+  @media (min-width: 1024px) {
+    .ing-carouselItem {
+      width: 158px;
+      height: 234px; }
+      .ing-carouselItem.swiper-slide-active {
+        width: 200px;
+        height: 292.5px;
+        transform: translateY(-8.5%); } }
 
 .ing-carouselItem__inner {
   position: relative;
@@ -251,6 +260,8 @@ Mobile Only
         left: 0px;
         right: auto;
         background: linear-gradient(to left, rgba(33, 33, 33, 0) 0, #212121 100%); }
+    .ing-carousel .swiper-wrapper {
+      margin-top: 33px; }
     .ing-carousel .swiper-button-prev,
     .ing-carousel .swiper-button-next {
       display: block;
@@ -298,15 +309,6 @@ Mobile Only
     .ing-carousel:not(.mobile-only) .ing-carouselItem__title {
       display: none; } }
   @media (min-width: 1024px) {
-    .ing-carousel:not(.mobile-only) .swiper-wrapper {
-      margin-top: 33px; }
-    .ing-carousel:not(.mobile-only) .ing-carouselItem {
-      width: 158px;
-      height: 234px; }
-      .ing-carousel:not(.mobile-only) .ing-carouselItem.swiper-slide-active {
-        width: 200px;
-        height: 292.5px;
-        transform: translateY(-8.5%); }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription {
       max-width: 320px; }
     .ing-carousel:not(.mobile-only) .ing-carouselDescription__titleWrapper {
@@ -318,14 +320,3 @@ Mobile Only
 NEED FIX
 mobile and mobileOnly items margin compensation
 ==============================================*/
-@media (min-width: 426px) and (max-width: 767px) {
-  :not(.swiper-slide-active) > .ing-carouselItem__inner {
-    transform: scale(0.95) translateX(-15%); }
-  .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
-    transform: translateX(15%); } }
-
-@media (min-width: 768px) {
-  .ing-carousel.mobile-only :not(.swiper-slide-active) > .ing-carouselItem__inner {
-    transform: scale(0.95) translateX(-10%); }
-  .ing-carousel.mobile-only .swiper-slide-active ~ .swiper-slide > .ing-carouselItem__inner {
-    transform: translateX(10%); } }
